@@ -78,9 +78,9 @@
 .navButtons {
     display: flex;
     gap: 3rem;
-    margin-right: 15%;
+    margin-right: 5%;
     font-family: "Baloo", sans-serif;
-
+    align-items: center;
 }
 
 .navButton {
@@ -101,4 +101,51 @@
     height: 0;
     overflow: hidden;
     visibility: hidden;
+}
+
+/* Language selector */
+
+.languageSelector {
+    position: relative;
+}
+
+.languageButton {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-family: "Baloo", sans-serif;
+    font-size: 110%;
+    color: #14162B;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    position: relative;
+    width: 3rem;
+}
+
+
+.languageButton:focus {
+    outline: none;
+}
+
+.arrow {
+    position: relative;
+    top: -0.1em;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    background: none;
+    border: none;
+}
+
+.option {
+    cursor: pointer;
+    color: #14162B;
+    font-family: "Baloo", sans-serif;
+    font-weight: 400;
+    font-size: 110%;
 }
