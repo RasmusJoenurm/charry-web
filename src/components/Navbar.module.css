@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Bold.ttf")
+    format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-ExtraBold.ttf")
+    format("truetype");
+    font-weight: 800;
+}
+
+
+
+.navbar {
+    background-color: #ffde74;
+    height: 97px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 15%;
+}
+
+.logo {
+    height: 86px;
+    width: 86px;
+    top: 5px;
+}
+
+.logoText {
+    margin-left: 0.5%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logoTitle {
+    font-family: "Baloo", sans-serif;
+    font-size: 165%;
+    font-weight: 800;
+    color: #14162B;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 0%;
+}
+
+.logoSubTitle {
+    font-size: 110%;
+    font-family: "Baloo", sans-serif;
+    font-weight: 800;
+    color: #14162B;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 0%;
+}
