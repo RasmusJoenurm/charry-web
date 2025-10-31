@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Partners from "./pages/Partners"
-import Mission from "./pages/Mission"
+import Us from "./pages/Us"
 import Challenges from "./pages/Challenges"
 
 import Navbar from "./components/Navbar";
@@ -17,7 +17,7 @@ function App() {
           <Route path="partners" element={<Partners />} />
           <Route path="newPartners" element={<Partners />} />
           <Route path="challenges" element={<Challenges />} />
-          <Route path="mission" element={<Mission />} />
+          <Route path="us" element={<Us />} />
         </Routes>
       </BrowserRouter >
     </>

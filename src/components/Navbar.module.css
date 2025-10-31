@@ -27,8 +27,12 @@
     width: 100%;
     position: fixed;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* Logo (left) */
 .logoContainer {
     display: flex;
     align-items: center;
@@ -48,10 +52,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Baloo", sans-serif;
 }
 
 .logoTitle {
-    font-family: "Baloo", sans-serif;
     font-size: 165%;
     font-weight: 800;
     color: #14162B;
@@ -62,10 +66,39 @@
 
 .logoSubTitle {
     font-size: 110%;
-    font-family: "Baloo", sans-serif;
     font-weight: 800;
     color: #14162B;
     line-height: 1;
     margin: 0;
     letter-spacing: 0%;
+}
+
+/* Buttons (right) */
+
+.navButtons {
+    display: flex;
+    gap: 3rem;
+    margin-right: 15%;
+    font-family: "Baloo", sans-serif;
+
+}
+
+.navButton {
+    font-size: 110%;
+    color: #14162B;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.navButton.active {
+    font-weight: 800;
+}
+
+.navButton::before {
+    display: block;
+    content: attr(data-text);
+    font-weight: 800;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
 }

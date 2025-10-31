@@ -1,4 +1,4 @@
-function Mission() {
+function Us() {
     return (
         <div>
             <h1>Our mission and the team</h1>
@@ -7,4 +7,4 @@ function Mission() {
     )
 }
 
-export default Mission
+export default Us
