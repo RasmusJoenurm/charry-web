@@ -20,11 +20,13 @@ const Navbar: React.FC = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logoContainer}>
-                <img src={logo} alt="Charry logo" className={styles.logo} />
-                <div className={styles.logoText}>
-                    <div className={styles.logoTitle}>Charry</div>
-                    <div className={styles.logoSubTitle}>annetusäpp</div>
-                </div>
+                <Link to="/" className={styles.logoLink}>
+                    <img src={logo} alt="Charry logo" className={styles.logo} />
+                    <div className={styles.logoText}>
+                        <div className={styles.logoTitle}>Charry</div>
+                        <div className={styles.logoSubTitle}>annetusäpp</div>
+                    </div>
+                </Link>
             </div>
 
             <div className={styles.navButtons}>

@@ -73,6 +73,9 @@
     letter-spacing: 0%;
 }
 
+.logoLink {
+    display: flex;
+}
 /* Buttons (right) */
 
 .navButtons {
