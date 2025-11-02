@@ -5,6 +5,7 @@ import Us from "./pages/Us"
 import Challenges from "./pages/Challenges"
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="challenges" element={<Challenges />} />
           <Route path="us" element={<Us />} />
         </Routes>
+        <Footer />
       </BrowserRouter >
     </>
   )
