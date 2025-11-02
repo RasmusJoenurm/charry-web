@@ -22,15 +22,12 @@ const Footer: React.FC = () => {
                 <a href="https://www.instagram.com/charry.rakendus/">
                     <img src={insta} alt="Instagram logo" className={styles.socialLogo} />
                 </a>
-
-                <a href="https://www.instagram.com/charry.rakendus/">
+                <a href="https://www.tiktok.com/@charry.app/">
                     <img src={tiktok} alt="Tiktok logo" className={styles.socialLogo} />
                 </a>
-
                 <a href="https://www.instagram.com/charry.rakendus/">
                     <img src={facebook} alt="Facebook logo" className={styles.socialLogo} />
                 </a>
-
                 <a href="https://www.linkedin.com/company/charry-app/">
                     <img src={linkedin} alt="Linkedin logo" className={styles.socialLogo} />
                 </a>
