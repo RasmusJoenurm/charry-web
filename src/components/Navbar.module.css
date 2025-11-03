@@ -51,7 +51,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Baloo", sans-serif;
 }
 
 .logoTitle {
@@ -81,7 +80,6 @@
     display: flex;
     gap: 3rem;
     margin-right: 5%;
-    font-family: "Baloo", sans-serif;
     align-items: center;
 }
 
@@ -116,7 +114,6 @@
     align-items: center;
     background: none;
     border: none;
-    font-family: "Baloo", sans-serif;
     font-size: 110%;
     color: #14162B;
     font-weight: 400;
@@ -147,7 +144,6 @@
 .option {
     cursor: pointer;
     color: #14162B;
-    font-family: "Baloo", sans-serif;
     font-weight: 400;
     font-size: 110%;
 }
