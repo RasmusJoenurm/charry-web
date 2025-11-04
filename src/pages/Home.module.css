@@ -19,9 +19,11 @@
     font-weight: 800;
 }
 
+/* To make sure, that the background-color behind navbar is yellow */
 .homeMainContent {
     padding-top: 0 !important;
 }
+
 
 
 .yellowContainer {
@@ -48,7 +50,7 @@
 }
 
 .yellowSubHeading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
     position: relative;
 }
@@ -94,3 +96,63 @@
     font-size: 170%;
     margin: 0;
 }
+
+/* Main part of the page */
+
+.mainContent {
+    padding: 12rem;
+    color: #F8F6EE;
+}
+
+.mainTextColumn {
+    font-weight: 400;
+}
+
+.textHeading {
+    font-size: 3rem;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.upperText {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 80%;
+}
+
+.smallerText {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 80%;
+}
+
+
+
+.buttonContainer {
+ font-weight: 400;
+}
+
+.buttonHeading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: -0.7rem;
+}
+
+.buttonText {
+    font-size: 1.2rem;
+    opacity: 80%;
+    margin-bottom: 1rem;
+}
+
+.downloadButton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    background-color: #ffde74;
+    border-radius: 0.8rem;
+}
+

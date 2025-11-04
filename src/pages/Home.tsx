@@ -15,10 +15,19 @@ function Home() {
                 </div>
             </div>
 
-            <div style={{ height: '300vh', padding: '2rem' }}>
-                <h1 style={{ color: 'white' }}>Welcome to Charry</h1>
-                <p style={{ color: 'white' }}>This pushes content down...</p>
+            <div className={styles.mainContent}>
+                <div className={styles.mainTextColumn}>
+                    <h1 className={styles.textHeading}>Annetamine on lihtne<br /> ja nauditav tegevus</h1>
+                    <p className={styles.upperText}>Charryga on annetus ainult paari kliki <br /> kaugusel.<br /> <br /> Toeta Eesti usaldusväärsemaid MTÜsid,<br /> saa visuaalset tagasisidet ning teeni<br /> oma heategudega silma- ja<br /> hingekosutavaid medaleid.</p>
+                    <p className={styles.smallerText}>* Annetada saab anonüümselt ja 100% annetustest<br /> läheb otse abivajajatele.</p>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <h3 className={styles.buttonHeading}>Laadi alla Charry annetusäpp</h3>
+                    <p className={styles.buttonText}>Saadaval iOS ja Android seadmetel.</p>
+                    <button className={styles.downloadButton}>Laadi alla</button>
+                </div>
             </div>
+
             <div className={styles.bottomContainer}>
                 <div className={styles.textContainer}>
                     <p className={styles.line1}>100+ annetajat</p>
