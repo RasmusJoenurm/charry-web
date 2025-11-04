@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Charry Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern website for the Charry mobile donation app - Estonia's contemporary donation platform that enables users to make a positive impact anytime, anywhere.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Charry is an Estonian donation app that aims to make Estonia better, one small good deed at a time. This website serves as the web presence for the mobile application, featuring information about the platform, partners, challenges, and the team.
 
-## React Compiler
+The site is built with React, TypeScript, and Vite, featuring:
+- Multiple pages: Home, Partners, Challenges, and About Us
+- Estonian language content
+- Custom bird mascot graphics
+- Responsive design with modern CSS modules
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Development
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (version 18 or higher)
+- npm or yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Available Scripts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Development server**: `npm run dev`
+  - Starts the development server with hot reload
+  - Default URL: http://localhost:5173
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Build for production**: `npm run build`
+  - Creates optimized production build in `dist/` folder
+
+- **Preview production build**: `npm run preview`
+  - Serves the production build locally for testing
+
+- **Lint code**: `npm run lint`
+  - Runs ESLint to check code quality
+
+### Project Structure
 ```
+src/
+├── pages/          # Page components (Home, Partners, Us, Challenges)
+├── components/     # Reusable components (Navbar, Footer)
+├── assets/         # Images, fonts, and static assets
+└── App.tsx         # Main application component with routing
+```
+
+## Tech Stack
+- **Frontend**: React 19 with TypeScript
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Styling**: CSS Modules
+- **Code Quality**: ESLint with TypeScript support
