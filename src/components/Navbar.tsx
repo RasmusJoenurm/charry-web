@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import styles from "./Navbar.module.css";
@@ -10,6 +10,9 @@ const Navbar: React.FC = () => {
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
     const [currentLanguage, setCurrentLanguage] = useState("Est");
 
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
     const handleLanguageChange = (newLang: string) => {
         setCurrentLanguage(newLang);
         setIsLanguageOpen(false);
@@ -17,8 +20,25 @@ const Navbar: React.FC = () => {
 
     const otherLanguage = currentLanguage === "Est" ? "Eng" : "Est";
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentSrcrollY = window.scrollY;
+
+            if (currentSrcrollY === 0) {
+                setIsVisible(true);
+            } else if (currentSrcrollY > lastScrollY && currentSrcrollY > 100) {
+                setIsVisible(false);
+            } else if (currentSrcrollY < lastScrollY) {
+                setIsVisible(true);
+            }
+            setLastScrollY(currentSrcrollY)
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
+
     return (
-        <nav className={styles.navbar}>
+        <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden}`}>
             <div className={styles.logoContainer}>
                 <Link to="/" className={styles.logoLink}>
                     <img src={logo} alt="Charry logo" className={styles.logo} />

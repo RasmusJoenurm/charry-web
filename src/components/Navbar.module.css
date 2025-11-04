@@ -24,10 +24,22 @@
 .navbar {
     background-color: #ffde74;
     width: 100%;
+    position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 97px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+.navbar.visible {
+    transform: translateY(0);
 }
 
 /* Logo (left) */
