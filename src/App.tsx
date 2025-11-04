@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
+import homeStyles from "./pages/Home.module.css"
+
 import Home from "./pages/Home"
 import Partners from "./pages/Partners"
 import Us from "./pages/Us"
@@ -14,8 +16,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-
-        <main className="main-content">
+        <main className={`main-content ${location.pathname === "/" ? homeStyles.homeMainContent : ""}`}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="partners" element={<Partners />} />
