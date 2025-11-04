@@ -16,3 +16,10 @@ a {
   text-decoration: none;  /* Removes underlines */
   color: inherit;         /* Uses parent element's color instead of blue */
 }
+
+.main-content {
+  background-color: #14162B;
+  min-height: 100vh;
+  padding: 2rem;
+  
+}
