@@ -24,7 +24,6 @@
 .navbar {
     background-color: #ffde74;
     width: 100%;
-    position: fixed;
     top: 0;
     display: flex;
     align-items: center;
@@ -74,8 +73,8 @@
 .logoLink {
     display: flex;
 }
-/* Buttons (right) */
 
+/* Buttons (right) */
 .navButtons {
     display: flex;
     gap: 3rem;

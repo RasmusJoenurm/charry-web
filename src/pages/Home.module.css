@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Bold.ttf")
+    format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-ExtraBold.ttf")
+    format("truetype");
+    font-weight: 800;
+}
+
+
+.bottomContainer {
+    width: 100vw;
+    background-color: #FFB4E5;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    text-align: center;
+}
+
+.line1 {
+    font-size: 220%;
+    font-weight: 600;
+    color: #14162B;
+    margin-bottom: -0.7rem; /* How far line1 and line2 are from eachother */
+}
+
+.line2 {
+    font-weight: 400;
+    font-size: 170%;
+    margin: 0;
+}
