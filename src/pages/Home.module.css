@@ -108,16 +108,18 @@
 /* Main part of the page */
 
 .mainContent {
-    padding: 10rem;
+    padding: 8vw 10vw;
     color: #F8F6EE;
     display: flex;
     align-items: center;
-    gap: 4rem;
+    justify-content: center;
+    gap: clamp(1vw, 10vw, 30vw);
 }
 
 .textSection {
-    flex: 1;
+    flex: 0 0 auto;
     flex-direction: column;
+    max-width: 50ch;
 }
 
 .mainTextColumn {
@@ -168,6 +170,11 @@
     padding-right: 2.3rem;
     background-color: #ffde74;
     border-radius: 0.8rem;
+}
+
+.imageColumn {
+    flex: 0 0 auto;
+    display: flex;
 }
 
 .mobilePhone {
