@@ -1,9 +1,22 @@
+import { useState } from "react"
+
 import styles from "./Home.module.css"
 import huggingBird from "../assets/birdHugging.svg"
 import wavingBird from "../assets/birdWaving.svg"
 import mobilePhones from "../assets/mobilePhones.svg"
 
+import QRModal from "../components/QRModal"
+
 function Home() {
+    const [isQRModalOpen, setIsQRModalOpen] = useState(false);
+
+    const openQRModal = () => {
+        setIsQRModalOpen(true);
+    }
+
+    const closeQRModal = () => {
+        setIsQRModalOpen(false);
+    }
     return (
         <>
             <div className={styles.yellowContainer}>
@@ -26,7 +39,7 @@ function Home() {
                     <div className={styles.buttonContainer}>
                         <h3 className={styles.buttonHeading}>Laadi alla Charry annetusäpp</h3>
                         <p className={styles.buttonText}>Saadaval iOS ja Android seadmetel.</p>
-                        <button className={styles.downloadButton}>Laadi alla</button>
+                        <button className={styles.downloadButton} onClick={openQRModal}>Laadi alla</button>
                     </div>
                 </div>
                 <div className={styles.imageColumn}>
@@ -40,6 +53,7 @@ function Home() {
                     <p className={styles.line2}>Koos loome suure mõju!</p>
                 </div>
             </div>
+            <QRModal isOpen={isQRModalOpen} onClose={closeQRModal} />
         </>
     )
 }
