@@ -20,7 +20,7 @@ function Home() {
                 <div className={styles.textSection}>
                     <div className={styles.mainTextColumn}>
                         <h1 className={styles.textHeading}>Annetamine on lihtne<br /> ja nauditav tegevus</h1>
-                        <p className={styles.upperText}>Charryga on annetus ainult paari kliki <br /> kaugusel.<br /> <br /> Toeta Eesti usaldusväärsemaid MTÜsid,<br /> saa visuaalset tagasisidet ning teeni<br /> oma heategudega silma- ja<br /> hingekosutavaid medaleid.</p>
+                        <p className={styles.upperText}>Charryga on annetus ainult paari kliki kaugusel.<br /> <br /> Toeta Eesti usaldusväärsemaid MTÜsid, saa visuaalset tagasisidet ning teeni oma heategudega silma- ja hingekosutavaid medaleid.</p>
                         <p className={styles.smallerText}>* Annetada saab anonüümselt ja 100% annetustest<br /> läheb otse abivajajatele.</p>
                     </div>
                     <div className={styles.buttonContainer}>

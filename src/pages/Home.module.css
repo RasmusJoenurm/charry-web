@@ -108,14 +108,16 @@
 /* Main part of the page */
 
 .mainContent {
-    padding: 12rem;
+    padding: 10rem;
     color: #F8F6EE;
     display: flex;
     align-items: center;
+    gap: 4rem;
 }
 
 .textSection {
     flex: 1;
+    flex-direction: column;
 }
 
 .mainTextColumn {
