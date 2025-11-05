@@ -110,6 +110,12 @@
 .mainContent {
     padding: 12rem;
     color: #F8F6EE;
+    display: flex;
+    align-items: center;
+}
+
+.textSection {
+    flex: 1;
 }
 
 .mainTextColumn {
@@ -134,8 +140,6 @@
     margin-bottom: 3rem;
     opacity: 80%;
 }
-
-
 
 .buttonContainer {
  font-weight: 400;
@@ -164,3 +168,6 @@
     border-radius: 0.8rem;
 }
 
+.mobilePhone {
+
+}

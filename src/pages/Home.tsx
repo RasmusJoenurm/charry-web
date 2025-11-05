@@ -1,6 +1,7 @@
 import styles from "./Home.module.css"
 import huggingBird from "../assets/birdHugging.svg"
 import wavingBird from "../assets/birdWaving.svg"
+import mobilePhones from "../assets/mobilePhones.svg"
 
 function Home() {
     return (
@@ -16,15 +17,20 @@ function Home() {
             </div>
 
             <div className={styles.mainContent}>
-                <div className={styles.mainTextColumn}>
-                    <h1 className={styles.textHeading}>Annetamine on lihtne<br /> ja nauditav tegevus</h1>
-                    <p className={styles.upperText}>Charryga on annetus ainult paari kliki <br /> kaugusel.<br /> <br /> Toeta Eesti usaldusväärsemaid MTÜsid,<br /> saa visuaalset tagasisidet ning teeni<br /> oma heategudega silma- ja<br /> hingekosutavaid medaleid.</p>
-                    <p className={styles.smallerText}>* Annetada saab anonüümselt ja 100% annetustest<br /> läheb otse abivajajatele.</p>
+                <div className={styles.textSection}>
+                    <div className={styles.mainTextColumn}>
+                        <h1 className={styles.textHeading}>Annetamine on lihtne<br /> ja nauditav tegevus</h1>
+                        <p className={styles.upperText}>Charryga on annetus ainult paari kliki <br /> kaugusel.<br /> <br /> Toeta Eesti usaldusväärsemaid MTÜsid,<br /> saa visuaalset tagasisidet ning teeni<br /> oma heategudega silma- ja<br /> hingekosutavaid medaleid.</p>
+                        <p className={styles.smallerText}>* Annetada saab anonüümselt ja 100% annetustest<br /> läheb otse abivajajatele.</p>
+                    </div>
+                    <div className={styles.buttonContainer}>
+                        <h3 className={styles.buttonHeading}>Laadi alla Charry annetusäpp</h3>
+                        <p className={styles.buttonText}>Saadaval iOS ja Android seadmetel.</p>
+                        <button className={styles.downloadButton}>Laadi alla</button>
+                    </div>
                 </div>
-                <div className={styles.buttonContainer}>
-                    <h3 className={styles.buttonHeading}>Laadi alla Charry annetusäpp</h3>
-                    <p className={styles.buttonText}>Saadaval iOS ja Android seadmetel.</p>
-                    <button className={styles.downloadButton}>Laadi alla</button>
+                <div className={styles.imageColumn}>
+                    <img src={mobilePhones} alt="phone" className={styles.mobilePhone} />
                 </div>
             </div>
 
