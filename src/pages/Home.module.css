@@ -19,6 +19,14 @@
     font-weight: 800;
 }
 
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-SemiBold.ttf");
+    font-weight: 500;
+}
+
+
+
 /* To make sure, that the background-color behind navbar is yellow */
 .homeMainContent {
     padding-top: 0 !important;
@@ -111,7 +119,7 @@
 .textHeading {
     font-size: 3rem;
     line-height: 1.3;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2rem;
 }
 
