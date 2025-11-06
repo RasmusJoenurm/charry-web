@@ -7,6 +7,12 @@
 
 @font-face {
     font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Baloo";
     src: url("../assets/fonts/BalooTamma2-Bold.ttf")
     format("truetype");
     font-weight: 600;
@@ -18,14 +24,6 @@
     format("truetype");
     font-weight: 800;
 }
-
-@font-face {
-    font-family: "Baloo";
-    src: url("../assets/fonts/BalooTamma2-SemiBold.ttf");
-    font-weight: 500;
-}
-
-
 
 /* To make sure, that the background-color behind navbar is yellow */
 .homeMainContent {
@@ -171,6 +169,7 @@
     padding-right: 2.3rem;
     background-color: #ffde74;
     border-radius: 0.8rem;
+    cursor: pointer;
 }
 
 .imageColumn {
