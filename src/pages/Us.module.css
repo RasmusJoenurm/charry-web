@@ -26,13 +26,17 @@
 }
 
 .missionContainer {
+    padding: 6vw 10vw;
+    width: 70vw;
     color: #F8F6EE;
 }
 
 .missionHeading {
+    font-size: 3.6rem;
     font-weight: 600;
 }
 
 .missionText {
-
+    font-size: 1.5rem;
+    opacity: 80%;
 }
