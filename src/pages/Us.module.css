@@ -26,7 +26,7 @@
 }
 
 .missionContainer {
-    padding: 6vw 10vw;
+    padding: 6vw var(--content-padding-x);
     width: 70vw;
     color: #F8F6EE;
 }

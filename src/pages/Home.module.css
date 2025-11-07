@@ -109,12 +109,11 @@
 /* Main part of the page */
 
 .mainContent {
-    padding: 8vw 10vw;
+    padding: 8vw var(--content-padding-x);
     color: #F8F6EE;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(1vw, 10vw, 30vw);
 }
 
 .textSection {

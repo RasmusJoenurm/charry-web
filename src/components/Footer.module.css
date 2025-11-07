@@ -21,7 +21,7 @@
 
 .footer {
     background-color: #222440;
-    padding: 5rem 5%;
+    padding: 5rem var(--content-padding-x);
     width: 100%;
     bottom: 0;
     display: flex;
@@ -33,7 +33,6 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 5%;
 }
 
 .logo {
