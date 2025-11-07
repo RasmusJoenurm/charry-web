@@ -26,7 +26,7 @@
 }
 
 .missionContainer {
-    padding: 6vw var(--content-padding-x);
+    padding: 6vw var(--content-padding-x) 0vw;
     width: 70vw;
     color: #F8F6EE;
 }
@@ -39,4 +39,81 @@
 .missionText {
     font-size: 1.5rem;
     opacity: 80%;
+}
+
+/* Family section */
+
+.familyContainer {
+    padding: var(--content-padding-x) var(--content-padding-x) 4vw;
+    color: #F8F6EE;
+}
+
+.familyHeading {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.textButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.familyText {
+    font-size: 1.5rem;
+    opacity: 80%;
+    width: 50vw;
+}
+
+.contactButton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffde74;
+    color: #14162B;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+/* Find us section */
+
+.findUs {
+    padding: var(--content-padding-x);
+    color: #F8F6EE;
+}
+
+.findUsHeading {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.textButtonsContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.findUsText {
+    font-size: 1.5rem;
+    opacity: 80%;
+    width: 50vw;
+}
+
+.buttonStack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socialButton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffde74;
+    color: #14162B;
+    border-radius: 0.8rem;
+    text-align: center;
 }
