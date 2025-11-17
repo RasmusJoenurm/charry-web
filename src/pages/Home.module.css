@@ -109,7 +109,7 @@
 /* Main part of the page */
 
 .mainContent {
-    padding: 8vw var(--content-padding-x);
+    padding: 4vw var(--content-padding-x);
     color: #F8F6EE;
     display: flex;
     align-items: center;

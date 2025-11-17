@@ -26,7 +26,7 @@
 }
 
 .headingContainer {
-    padding: 6vw var(--content-padding-x);
+    padding: var(--content-padding-y) var(--content-padding-x);
     color: #F8F6EE;
 }
 
