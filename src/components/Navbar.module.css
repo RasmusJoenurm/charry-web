@@ -43,6 +43,10 @@
     transform: translateY(0);
 }
 
+.homeBorder {
+    border-bottom: 1px solid black;
+}
+
 /* Logo (left) */
 .logoContainer {
     display: flex;

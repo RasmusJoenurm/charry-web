@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
     }, [lastScrollY]);
 
     return (
-        <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden}`}>
+        <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden} ${location.pathname === "/" ? styles.homeBorder : ""}`}>
             <div className={styles.logoContainer}>
                 <Link to="/" className={styles.logoLink}>
                     <img src={logo} alt="Charry logo" className={styles.logo} />
