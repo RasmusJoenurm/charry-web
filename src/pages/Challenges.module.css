@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Bold.ttf")
+    format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-ExtraBold.ttf")
+    format("truetype");
+    font-weight: 800;
+}
+
+.headingContainer {
+    padding: 6vw var(--content-padding-x);
+    color: #F8F6EE;
+}
+
+.headingTop {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
