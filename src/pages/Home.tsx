@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 import styles from "./Home.module.css"
 import huggingBird from "../assets/birdHugging.svg"
@@ -17,6 +17,16 @@ function Home() {
     const closeQRModal = () => {
         setIsQRModalOpen(false);
     }
+
+    const [userCount, setUserCount] = useState<number>(100);
+
+    useEffect(() => {
+        fetch("https://backend-impact-203432700423.europe-west1.run.app/user/currentNumberOfUsers")
+            .then(response => response.json())
+            .then(data => setUserCount(data))
+            .catch(() => setUserCount(100));
+    }, []);
+
     return (
         <>
             <div className={styles.yellowContainer}>
@@ -49,7 +59,7 @@ function Home() {
 
             <div className={styles.bottomContainer}>
                 <div className={styles.textContainer}>
-                    <p className={styles.line1}>100+ annetajat</p>
+                    <p className={styles.line1}>{userCount}+ annetajat</p>
                     <p className={styles.line2}>Koos loome suure mõju!</p>
                 </div>
             </div>
