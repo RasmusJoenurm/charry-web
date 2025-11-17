@@ -49,9 +49,15 @@ function Challenges() {
                         </div>
                     </div>
                     <button className={styles.challengeButton} onClick={openChallengeModal}>Väljakutse näide</button>
-
                 </div>
                 <img src={rightSideImage} className={styles.sideImage} alt="" />
+            </div>
+            <div className={styles.futureContainer}>
+                <h2 className={styles.futureHeading}>Tuleviku partnerid</h2>
+                <div className={styles.textButtonContainer}>
+                    <p className={styles.futureText}>Kui sinu ettevõte soovib panustada Eesti heategevuskultuuri arengusse, võta meiega ühendust.</p>
+                    <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>Võta ühendust</a>
+                </div>
             </div>
             <ChallengeModal isOpen={isChallengeModalOpen} onClose={closeChallengeModal} />
         </>
