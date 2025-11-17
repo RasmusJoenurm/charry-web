@@ -4,6 +4,7 @@ import styles from "./Challenges.module.css"
 import bulletIcon from "../assets/birdBulletPoint.svg"
 import ChallengeModal from "../components/ChallengeModal"
 import rightSideImage from "../assets/challengesMobile.svg"
+import divider from "../assets/heartDivider.svg"
 
 function Challenges() {
     const [isChallengeModalOpen, setIsChallengeModalOpen] = useState(false);
@@ -26,7 +27,7 @@ function Challenges() {
                         <p className={styles.introText}>Kutsume kõiki ettevõtteid kaasa lööma Eesti heategevuskultuuri arendamisel ning esitama Charry anneteajatele heategevusliku väljakutse.</p>
                     </div>
                     <div className={styles.heartDivider}>
-
+                        <img src={divider} className={styles.heartDividerImage}></img>
                     </div>
 
                     <div className={styles.bulletPointContainer}>

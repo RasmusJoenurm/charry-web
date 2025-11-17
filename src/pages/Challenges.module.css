@@ -63,7 +63,14 @@
 }
 
 .heartDivider {
+    display: flex;
+    width: 100%;
     margin-bottom: 2rem;
+}
+
+.heartDividerImage {
+    width: 100%;
+    height: auto;
 }
 
 .bulletPointContainer {
