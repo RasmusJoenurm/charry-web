@@ -9,7 +9,7 @@ function Partners() {
                 <h2 className={styles.friendsHeading}>Meie sõbrad</h2>
                 <div className={styles.textButtonContainer}>
                     <p className={styles.friendsText}>Kui soovid, et sinu usaldusväärne ja hästi toimiv heategevusorganisatsioon oleks Charry platvormil, uuri rohkem.</p>
-                    <Link to="/NewPartners" className={styles.newPartnersButton}>Uued MTÜ-d</Link>
+                    <Link to="/newPartners" className={styles.newPartnersButton}>Uued MTÜ-d</Link>
                 </div>
             </div>
         </>

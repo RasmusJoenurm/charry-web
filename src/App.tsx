@@ -4,6 +4,7 @@ import homeStyles from "./pages/Home.module.css"
 
 import Home from "./pages/Home"
 import Partners from "./pages/Partners"
+import NewPartners from "./pages/NewPartners"
 import Us from "./pages/Us"
 import Challenges from "./pages/Challenges"
 
@@ -20,7 +21,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="partners" element={<Partners />} />
-          <Route path="newPartners" element={<Partners />} />
+          <Route path="newPartners" element={<NewPartners />} />
           <Route path="challenges" element={<Challenges />} />
           <Route path="us" element={<Us />} />
         </Routes>
