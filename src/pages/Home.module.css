@@ -113,7 +113,7 @@
     color: #F8F6EE;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .textSection {

@@ -11,7 +11,7 @@ function Us() {
                 <h2 className={styles.familyHeading}>Charry pere</h2>
                 <div className={styles.textButtonContainer}>
                     <p className={styles.familyText}>Oleme avatud uuteks tutvusteks. Kui tunned, et saad Charryle väärtust lisada, võta ühendust.</p>
-                    <a href="mailto:rober@charry.ee?subject?Contact%20Request" className={styles.contactButton}>Võta ühendust</a>
+                    <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>Võta ühendust</a>
                 </div>
             </div>
             <div className={styles.findUs}>
