@@ -34,3 +34,79 @@
     font-size: 3.6rem;
     font-weight: 600;
 }
+
+.challengesMainContent {
+    display: flex;
+    padding: 0 var(--content-padding-x);
+    align-items: flex-start;
+    width: 100vw;
+    justify-content: space-between;
+    margin-top: -2rem;
+}
+
+.textMainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 60ch;
+    opacity: 80%;
+}
+
+.introSection {
+    margin-bottom: 2rem;
+}
+
+.introText {
+    flex: 1;
+    color: #F8F6EE;
+    font-size: 1.5rem;
+}
+
+.heartDivider {
+    margin-bottom: 2rem;
+}
+
+.bulletPointContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.bulletPoint {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.bulletIcon {
+    margin-top: 0.2rem;
+}
+
+.bulletText {
+    flex: 1;
+    color: #F8F6EE;
+    font-size: 1.5rem;
+}
+
+.challengeButton {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    background-color: #61B7D0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.sideImage {
+    flex: 0 0 auto;
+    display: block;
+    clip-path: inset(6.5% 8% 10% 7%);
+    align-self: flex-start;
+    margin-top: -3.2rem;
+    margin-right: -6rem;
+}

@@ -21,7 +21,7 @@ function Challenges() {
                 <h1 className={styles.headingTop}>Ettevõtete väljakutsed</h1>
             </div>
             <div className={styles.challengesMainContent}>
-                <div className={styles.TextMainContent}>
+                <div className={styles.textMainContent}>
                     <div className={styles.introSection}>
                         <p className={styles.introText}>Kutsume kõiki ettevõtteid kaasa lööma Eesti heategevuskultuuri arendamisel ning esitama Charry anneteajatele heategevusliku väljakutse.</p>
                     </div>
@@ -50,9 +50,7 @@ function Challenges() {
                     <button className={styles.challengeButton} onClick={openChallengeModal}>Väljakutse näide</button>
 
                 </div>
-                <div className={styles.mobileImage}>
-                    <img src={rightSideImage} className={styles.sideImage} alt="" />
-                </div>
+                <img src={rightSideImage} className={styles.sideImage} alt="" />
             </div>
             <ChallengeModal isOpen={isChallengeModalOpen} onClose={closeChallengeModal} />
         </>
