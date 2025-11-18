@@ -25,6 +25,11 @@ function Partners() {
     const getCategoryCount = (category: string) =>
         cards.filter(card => card.category === category).length;
 
+    const scrollToCategory = (category: string) => {
+        const element = document.getElementById(category);
+        element?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <>
             <div className={styles.friendsContainer}>
@@ -42,6 +47,7 @@ function Partners() {
                             key={category}
                             className={styles.filterButton}
                             style={{ backgroundImage: `url(${categoryIcons[category]})` }}
+                            onClick={() => scrollToCategory(category)}
                         >
                             <span className={styles.filterText}>
                                 {category} ({getCategoryCount(category)})
@@ -51,15 +57,22 @@ function Partners() {
                 </div>
             </div>
             <div className={styles.cardsContainer}>
-                {cards.map((card, index) => (
-                    <Card
-                        key={card.id}
-                        name={card.name}
-                        card={card.card}
-                        description={card.description}
-                        isReversed={index % 2 !== 0}
-                    />
-                ))}
+                {categories.map(category => {
+                    const categoryCards = cards.filter(card => card.category === category);
+                    return (
+                        <div key={category} id={category} className={styles.categorySection}>
+                            {categoryCards.map((card, index) => (
+                                <Card
+                                    key={card.id}
+                                    name={card.name}
+                                    card={card.card}
+                                    description={card.description}
+                                    isReversed={index % 2 !== 0}
+                                />
+                            ))}
+                        </div>
+                    );
+                })}
             </div>
         </>
     )
