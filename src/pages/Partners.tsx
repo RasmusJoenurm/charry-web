@@ -1,10 +1,30 @@
 import { Link } from "react-router-dom";
 
 import styles from "./Partners.module.css"
-import { cards } from "../data/cards"
+import { cards, categories } from "../data/cards"
 import Card from "../components/Card"
 
+import tervisSvg from "../assets/filterHealth.svg"
+import loomadSvg from "../assets/filterAnimals.svg"
+import lasteSvg from "../assets/filterChildren.svg"
+import loodusSvg from "../assets/filterNature.svg"
+import haridusSvg from "../assets/filterEducation.svg"
+import uhiskondSvg from "../assets/filterSociety.svg"
+
 function Partners() {
+
+    const categoryIcons: Record<string, string> = {
+        "tervis": tervisSvg,
+        "loomade heaolu": loomadSvg,
+        "laste heaolu": lasteSvg,
+        "loodus ja keskkond": loodusSvg,
+        "haridus": haridusSvg,
+        "tugev ühiskond": uhiskondSvg
+    };
+
+    const getCategoryCount = (category: string) =>
+        cards.filter(card => card.category === category).length;
+
     return (
         <>
             <div className={styles.friendsContainer}>
@@ -12,6 +32,22 @@ function Partners() {
                 <div className={styles.textButtonContainer}>
                     <p className={styles.friendsText}>Kui soovid, et sinu usaldusväärne ja hästi toimiv heategevusorganisatsioon oleks Charry platvormil, uuri rohkem.</p>
                     <Link to="/newPartners" className={styles.newPartnersButton}>Uued MTÜ-d</Link>
+                </div>
+            </div>
+            <div className={styles.filterSection}>
+                <p className={styles.filterHeading}>Vali filter</p>
+                <div className={styles.filterGrid}>
+                    {categories.map((category) => (
+                        <div
+                            key={category}
+                            className={styles.filterButton}
+                            style={{ backgroundImage: `url(${categoryIcons[category]})` }}
+                        >
+                            <span className={styles.filterText}>
+                                {category} ({getCategoryCount(category)})
+                            </span>
+                        </div>
+                    ))}
                 </div>
             </div>
             <div className={styles.cardsContainer}>
