@@ -60,7 +60,7 @@ function Partners() {
                 {categories.map(category => {
                     const categoryCards = cards.filter(card => card.category === category);
                     return (
-                        <div key={category} id={category} className={styles.categorySection}>
+                        <div key={category} id={category}>
                             {categoryCards.map((card, index) => (
                                 <Card
                                     key={card.id}
