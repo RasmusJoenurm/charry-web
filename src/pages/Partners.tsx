@@ -57,22 +57,28 @@ function Partners() {
                 </div>
             </div>
             <div className={styles.cardsContainer}>
-                {categories.map(category => {
-                    const categoryCards = cards.filter(card => card.category === category);
-                    return (
-                        <div key={category} id={category}>
-                            {categoryCards.map((card, index) => (
-                                <Card
-                                    key={card.id}
-                                    name={card.name}
-                                    card={card.card}
-                                    description={card.description}
-                                    isReversed={index % 2 !== 0}
-                                />
-                            ))}
-                        </div>
-                    );
-                })}
+                {(() => {
+                    let globalIndex = 0;
+                    return categories.map(category => {
+                        const categoryCards = cards.filter(card => card.category === category);
+                        return (
+                            <div key={category} id={category}>
+                                {categoryCards.map((card) => {
+                                    const currentIndex = globalIndex++;
+                                    return (
+                                        <Card
+                                            key={card.id}
+                                            name={card.name}
+                                            card={card.card}
+                                            description={card.description}
+                                            isReversed={currentIndex % 2 !== 0}
+                                        />
+                                    );
+                                })}
+                            </div>
+                        );
+                    });
+                })()}
             </div>
         </>
     )
