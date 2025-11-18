@@ -14,12 +14,12 @@ import uhiskondSvg from "../assets/filterSociety.svg"
 function Partners() {
 
     const categoryIcons: Record<string, string> = {
-        "tervis": tervisSvg,
-        "loomade heaolu": loomadSvg,
-        "laste heaolu": lasteSvg,
-        "loodus ja keskkond": loodusSvg,
-        "haridus": haridusSvg,
-        "tugev ühiskond": uhiskondSvg
+        "Tervis": tervisSvg,
+        "Loomade heaolu": loomadSvg,
+        "Laste heaolu": lasteSvg,
+        "Loodus ja keskkond": loodusSvg,
+        "Haridus": haridusSvg,
+        "Tugev ühiskond": uhiskondSvg
     };
 
     const getCategoryCount = (category: string) =>
