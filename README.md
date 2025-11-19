@@ -1,55 +1,108 @@
 # Charry Website
 
-A modern website for the Charry mobile donation app - Estonia's contemporary donation platform that enables users to make a positive impact anytime, anywhere.
+This is the website for Charry, an Estonian donation app. The site showcases our cause, introduces our team tells a bit about our partners.
 
-## About
+## What is Charry?
 
-Charry is an Estonian donation app that aims to make Estonia better, one small good deed at a time. This website serves as the web presence for the mobile application, featuring information about the platform, partners, challenges, and the team.
+Charry is a donation platform that makes it easy to support Estonian charities. Our mission is to make donating simple and enjoyable, so people want to do it more often.
 
-The site is built with React, TypeScript, and Vite, featuring:
-- Multiple pages: Home, Partners, Challenges, and About Us
-- Estonian language content
-- Custom bird mascot graphics
-- Responsive design with modern CSS modules
+## What's on the website?
 
-## Development
+- **Home page** - Introduction to Charry with a download button for the mobile app
+- **Partners page** - Browse Estonian charities by category (health, education, animals, etc.)
+- **Challenges page** - Info about corporate partnership programs
+- **About Us page** - Meet our team and see photos
 
-### Prerequisites
-- Node.js (version 18 or higher)
-- npm or yarn
+## Getting started (for beginners)
 
-### Installation
+Never coded before? No worries! Here's how to run this website on your computer:
+
+### 1. Install Node.js
+Go to [nodejs.org](https://nodejs.org/) and download the version that says "LTS". Install it like any other program.
+
+### 2. Get a code editor
+Download [Visual Studio Code](https://code.visualstudio.com/) - it's free and makes coding much easier.
+
+### 3. Download this project
+Either clone it with Git or just download the ZIP file and extract it somewhere.
+
+### 4. Open your terminal
+- **Windows**: Press Windows key + R, type `cmd`, hit Enter
+- **Mac**: Press Cmd + Space, type "Terminal", hit Enter
+
+### 5. Navigate to the project folder
+```bash
+cd charry-web
+```
+(Replace "charry-web" with whatever you named the folder)
+
+### 6. Install dependencies
 ```bash
 npm install
 ```
+This downloads everything the website needs to run. Takes a minute or two.
 
-### Available Scripts
+### 7. Start the website
+```bash
+npm run dev
+```
 
-- **Development server**: `npm run dev`
-  - Starts the development server with hot reload
-  - Default URL: http://localhost:5173
+### 8. Open it in your browser
+Go to `http://localhost:5173` and you should see the Charry website!
 
-- **Build for production**: `npm run build`
-  - Creates optimized production build in `dist/` folder
+## Testing things out
 
-- **Preview production build**: `npm run preview`
-  - Serves the production build locally for testing
+Once it's running, try:
 
-- **Lint code**: `npm run lint`
-  - Runs ESLint to check code quality
+- Clicking around the navigation menu
+- On the Partners page, click the filter buttons to jump between charity categories
+- Click "Toeta" on any charity card to see the donation QR code
+- On the About Us page, use the arrows to browse through photos
+- Try resizing your browser window to see how it looks on mobile
 
-### Project Structure
+## For developers
+
+The website is built with:
+- React 19 + TypeScript
+- Vite for building
+- CSS Modules for styling
+- React Router for navigation
+
+### Commands
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run lint     # Check code quality
+```
+
+### Project structure
 ```
 src/
-├── pages/          # Page components (Home, Partners, Us, Challenges)
-├── components/     # Reusable components (Navbar, Footer)
-├── assets/         # Images, fonts, and static assets
-└── App.tsx         # Main application component with routing
+├── pages/       # Main pages (Home, Partners, etc.)
+├── components/  # Reusable stuff (Navbar, modals, etc.)
+├── assets/      # Images and fonts
+└── data/        # Partner data
 ```
 
-## Tech Stack
-- **Frontend**: React 19 with TypeScript
-- **Build Tool**: Vite
-- **Routing**: React Router DOM
-- **Styling**: CSS Modules
-- **Code Quality**: ESLint with TypeScript support
+### Adding new partners
+
+Edit `src/data/cards.ts` - just add a new object to the array with the partner's info. The categories are: "Tervis", "Loomade heaolu", "Laste heaolu", "Loodus ja keskkond", "Haridus", "Tugev ühiskond".
+
+### Adding gallery photos
+
+Drop new images into `src/assets/gallery/` and they'll automatically show up in the photo carousel on the About Us page.
+
+## Need help?
+
+- **Can't install Node.js?** Make sure you're downloading from the official website
+- **Terminal won't open?** Google "how to open terminal" + your operating system
+- **`npm install` not working?** Try deleting the `node_modules` folder and running it again
+- **Website won't load?** Check that the terminal shows the localhost URL and visit that exact address
+
+## Estonian context
+
+This website is made specifically for Estonia - all the text is in Estonian, it features real Estonian charities, and follows local donation practices.
+
+---
+
+Built for Estonia's donation community 🇪🇪
