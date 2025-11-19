@@ -1,10 +1,29 @@
+import { useState } from "react"
+
 import styles from "./Us.module.css"
+
 import bossImage from "../assets/bossCharry.svg"
 import robert from "../assets/robert.svg"
 import aleksandr from "../assets/aleksandr.svg"
 import johanna from "../assets/johanna.svg"
 
+import leftArrow from "../assets/arrowLeft.svg"
+import rightArrow from "../assets/arrowRight.svg"
+
+const galleryModules = import.meta.glob("../assets/gallery/*.{png,jpg,jpeg,svg}", { eager: true });
+
 function Us() {
+
+    const galleryImages = Object.values(galleryModules).map((module) => (module as { default: string }).default);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1);
+    }
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1);
+    }
+
     return (
         <>
             <div className={styles.missionContainer}>
@@ -39,6 +58,15 @@ function Us() {
                         <a href="https://www.tiktok.com/@charry.app/" className={styles.socialButton}>TikTok</a>
                     </div>
                 </div>
+            </div>
+            <div className={styles.photoGallery}>
+                <button className={`${styles.arrowButton} ${styles.leftArrow}`} onClick={prevImage}>
+                    <img src={leftArrow} alt="previous" />
+                </button>
+                <img src={galleryImages[currentImageIndex]} className={styles.galleryImage} alt={`Gallery ${currentImageIndex + 1}`} />
+                <button className={`${styles.arrowButton} ${styles.rightArrow}`} onClick={nextImage}>
+                    <img src={rightArrow} alt="previous" />
+                </button>
             </div>
         </>
     )
