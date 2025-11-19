@@ -108,6 +108,21 @@
     color: #F8F6EE;
 }
 
+/* Team section */ 
+
+.teamContainer {
+    padding: var(--content-padding-y) 4vw;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.rowImage {
+    flex: 1;
+    max-width: 27.5vw;
+    height: auto;
+}
+
 /* Find us section */
 
 .findUs {

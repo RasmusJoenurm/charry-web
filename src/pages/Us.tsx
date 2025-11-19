@@ -1,5 +1,8 @@
 import styles from "./Us.module.css"
 import bossImage from "../assets/bossCharry.svg"
+import robert from "../assets/robert.svg"
+import aleksandr from "../assets/aleksandr.svg"
+import johanna from "../assets/johanna.svg"
 
 function Us() {
     return (
@@ -21,6 +24,11 @@ function Us() {
                     <h3 className={styles.bossHeading}>Suur Boss</h3>
                     <p className={styles.bossText}>Charry on meie maskott. Nägus linnuke, kes igapäevaselt suunab ja inspireerib meid.<br /> <br />Kui te küsite, siis jah — ta on valge ronk. Mitte tibu, varblane, tuvi ega öökull.</p>
                 </div>
+            </div>
+            <div className={styles.teamContainer}>
+                <img src={robert} className={styles.rowImage} alt="" />
+                <img src={aleksandr} className={styles.rowImage} alt="" />
+                <img src={johanna} className={styles.rowImage} alt="" />
             </div>
             <div className={styles.findUs}>
                 <h2 className={styles.findUsHeading}>Leia meid sotsiaalmeediast</h2>
