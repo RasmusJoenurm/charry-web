@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             </div>
 
             <div className={styles.navButtons}>
-                <Link to="/partners" data-text="MTÜ-d" className={` ${styles.navButton} ${location.pathname === "/partners" ? styles.active : ""}`}>MTÜ-d</Link>
+                <Link to="/partners" data-text="MTÜ-d" className={` ${styles.navButton} ${location.pathname === "/partners" || location.pathname === "/newPartners" ? styles.active : ""}`}>MTÜ-d</Link>
                 <Link to="/challenges" data-text="Väljakutsed" className={` ${styles.navButton} ${location.pathname === "/challenges" ? styles.active : ""}`}>Väljakutsed</Link>
                 <Link to="/us" data-text="Meie" className={` ${styles.navButton} ${location.pathname === "/us" ? styles.active : ""}`}>Meie</Link>
 
