@@ -1,4 +1,5 @@
 import styles from "./Us.module.css"
+import bossImage from "../assets/bossCharry.svg"
 
 function Us() {
     return (
@@ -12,6 +13,13 @@ function Us() {
                 <div className={styles.textButtonContainer}>
                     <p className={styles.familyText}>Oleme avatud uuteks tutvusteks. Kui tunned, et saad Charryle väärtust lisada, võta ühendust.</p>
                     <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>Võta ühendust</a>
+                </div>
+            </div>
+            <div className={styles.bossContainer}>
+                <img src={bossImage} className={styles.bossImage} alt="" />
+                <div className={styles.textContainer}>
+                    <h3 className={styles.bossHeading}>Suur Boss</h3>
+                    <p className={styles.bossText}>Charry on meie maskott. Nägus linnuke, kes igapäevaselt suunab ja inspireerib meid.<br /> <br />Kui te küsite, siis jah — ta on valge ronk. Mitte tibu, varblane, tuvi ega öökull.</p>
                 </div>
             </div>
             <div className={styles.findUs}>
