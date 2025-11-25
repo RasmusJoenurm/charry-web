@@ -54,6 +54,11 @@
             "title": "Charry family",
             "titleText": "We are open to new team members. If you feel you can bring value to Charry, get in touch with us.",
             "buttonText": "Contact us"
+        },
+        "boss": {
+            "title": "Big Boss",
+            "titleText1": "Charry is our mascot. A handsome little bird who guides and inspires us every day.",
+            "titleText2": "And yes, if you’re wondering - he’s a white raven. Not a chick, sparrow, pigeon, or owl."
         }
     }
 }

@@ -53,6 +53,11 @@
             "title": "Charry pere",
             "titleText": "Oleme avatud uuteks tutvusteks. Kui tunned, et saad Charryle väärtust lisada, võta ühendust.",
             "buttonText": "Võta ühendust"
+        },
+        "boss": {
+            "title": "Suur Boss",
+            "titleText1": "Charry on meie maskott. Nägus linnuke, kes igapäevaselt suunab ja inspireerib meid.",
+            "titleText2": "Kui te küsite, siis jah — ta on valge ronk. Mitte tibu, varblane, tuvi ega öökull."
         }
     }
 }

@@ -43,8 +43,8 @@ function Us() {
             <div className={styles.bossContainer}>
                 <img src={bossImage} className={styles.bossImage} alt="" />
                 <div className={styles.textContainer}>
-                    <h3 className={styles.bossHeading}>Suur Boss</h3>
-                    <p className={styles.bossText}>Charry on meie maskott. Nägus linnuke, kes igapäevaselt suunab ja inspireerib meid.<br /> <br />Kui te küsite, siis jah — ta on valge ronk. Mitte tibu, varblane, tuvi ega öökull.</p>
+                    <h3 className={styles.bossHeading}>{t("us.boss.title")}</h3>
+                    <p className={styles.bossText}>{t("us.boss.titleText1")}<br /> <br />{t("us.boss.titleText2")}</p>
                 </div>
             </div>
             <div className={styles.teamContainer}>
