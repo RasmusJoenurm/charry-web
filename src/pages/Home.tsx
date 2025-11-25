@@ -45,14 +45,14 @@ function Home() {
             <div className={styles.mainContent}>
                 <div className={styles.textSection}>
                     <div className={styles.mainTextColumn}>
-                        <h1 className={styles.textHeading}>Annetamine on lihtne<br /> ja nauditav tegevus</h1>
-                        <p className={styles.upperText}>Charryga on annetus ainult paari kliki kaugusel.<br /> <br /> Toeta Eesti usaldusväärsemaid MTÜsid, saa visuaalset tagasisidet ning teeni oma heategudega silma- ja hingekosutavaid medaleid.</p>
-                        <p className={styles.smallerText}>* Annetada saab anonüümselt ja 100% annetustest<br /> läheb otse abivajajatele.</p>
+                        <h1 className={styles.textHeading}>{t("home.main.titleLine1")}<br /> {t("home.main.titleLine2")}</h1>
+                        <p className={styles.upperText}>{t("home.main.subLine1")}<br /> <br /> {t("home.main.subLine2")}</p>
+                        <p className={styles.smallerText}>{t("home.main.smallLine1")}<br /> {t("home.main.smallLine2")}</p>
                     </div>
                     <div className={styles.buttonContainer}>
-                        <h3 className={styles.buttonHeading}>Laadi alla Charry annetusäpp</h3>
-                        <p className={styles.buttonText}>Saadaval iOS ja Android seadmetel.</p>
-                        <button className={styles.downloadButton} onClick={openQRModal}>Laadi alla</button>
+                        <h3 className={styles.buttonHeading}>{t("home.main.downloadTitle")}</h3>
+                        <p className={styles.buttonText}>{t("home.main.downloadText")}</p>
+                        <button className={styles.downloadButton} onClick={openQRModal}>{t("home.main.downloadButton")}</button>
                     </div>
                 </div>
                 <div className={styles.imageColumn}>

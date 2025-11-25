@@ -13,7 +13,15 @@
             "subLine3": "kohas ja igal ajal"
         },
         "main": {
-
+            "titleLine1": "Annetamine on lihtne",
+            "titleLine2": "ja nauditav tegevus",
+            "subLine1": "Charryga on annetus ainult paari kliki kaugusel.",
+            "subLine2": "Toeta Eesti usaldusväärsemaid MTÜsid, saa visuaalset tagasisidet ning teeni oma heategudega silma- ja hingekosutavaid medaleid.",
+            "smallLine1": "* Annetada saab anonüümselt ja 100% annetustest",
+            "smallLine2": "läheb otse abivajajatele.",
+            "downloadTitle": "Laadi alla Charry annetusäpp",
+            "downloadText": "Saadaval iOS ja Android seadmetel.",
+            "downloadButton": "Laadi alla"
         }
     }
 }
