@@ -4,6 +4,7 @@
         "challenges": "Challenges",
         "us": "Team"
     },
+
     "home": {
         "yellow": {
             "titleLine1": "Make Estonia a better place,",
@@ -26,6 +27,22 @@
         "bottom": {
             "usersCount": "{{count}}+ donors",
             "usersText": "Together we make a huge impact!"
+        }
+    },
+    "challenges": {
+        "main": {
+            "title": "Partner Challenges",
+            "titleText": "We invite all companies to contribute to the development of Estonia’s charity culture by presenting a charitable challenge to Charry donors.",
+            "bulletpoint1": "For completing the challenge, the company rewards donors with its products or services.",
+            "bulletpoint2": "Presenting a challenge is a great way to demonstrate social responsibility of your company and gain visibility for your activities.",
+            "bulletpoint3": "The goal of the challenge is to encourage people to donate.",
+            "bulletpoint4": "The Charry team ensures that the redemption of rewards is fair and secure.",
+            "buttonText": "Example of a challenge"
+        },
+        "future": {
+            "title": "Future Partners",
+            "titleText": "If your company wishes to contribute to Estonia’s charity culture and present a charitable challenge, get in touch with us.",
+            "buttonText": "Contact us"
         }
     }
 }

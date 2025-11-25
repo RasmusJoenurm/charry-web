@@ -27,5 +27,21 @@
             "usersCount": "{{count}}+ annetajat",
             "usersText": "Koos loome suure mõju!"
         }
+    },
+    "challenges": {
+        "main": {
+            "title": "Ettevõtete väljakutsed",
+            "titleText": "Kutsume kõiki ettevõtteid kaasa lööma Eesti heategevuskultuuri arendamisel ning esitama Charry anneteajatele heategevusliku väljakutse.",
+            "bulletpoint1": "Väljakutse täitmise eest premeerib ettevõte annetajad oma toodete või teenustega.",
+            "bulletpoint2": "Väljakutse esitamine on suurepärane viis näidata oma sotsiaalset vastutust ja pälvida tähelepanu oma ettevõtte tegevustele.",
+            "bulletpoint3": "Väljakutse eesmärk on innustada inimesi annetama.",
+            "bulletpoint4": "Charry meeskond tagab, et auhindade lunastamine on aus ja turvaline.",
+            "buttonText": "Väljakutse näide"
+        },
+        "future": {
+            "title": "Tuleviku partnerid",
+            "titleText": "Kui sinu ettevõte soovib panustada Eesti heategevuskultuuri arengusse, võta meiega ühendust.",
+            "buttonText": "Võta ühendust"
+        }
     }
 }

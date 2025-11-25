@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 import styles from "./Challenges.module.css"
 import bulletIcon from "../assets/birdBulletPoint.svg"
@@ -16,15 +17,18 @@ function Challenges() {
     const closeChallengeModal = () => {
         setIsChallengeModalOpen(false);
     }
+
+    const { t } = useTranslation()
+
     return (
         <>
             <div className={styles.headingContainer}>
-                <h1 className={styles.headingTop}>Ettevõtete väljakutsed</h1>
+                <h1 className={styles.headingTop}>{t("challenges.main.title")}</h1>
             </div>
             <div className={styles.challengesMainContent}>
                 <div className={styles.textMainContent}>
                     <div className={styles.introSection}>
-                        <p className={styles.introText}>Kutsume kõiki ettevõtteid kaasa lööma Eesti heategevuskultuuri arendamisel ning esitama Charry anneteajatele heategevusliku väljakutse.</p>
+                        <p className={styles.introText}>{t("challenges.main.titleText")}</p>
                     </div>
                     <div className={styles.heartDivider}>
                         <img src={divider} className={styles.heartDividerImage}></img>
@@ -33,30 +37,30 @@ function Challenges() {
                     <div className={styles.bulletPointContainer}>
                         <div className={styles.bulletPoint}>
                             <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>Väljakutse täitmise eest premeerib ettevõte annetajad oma toodete või teenustega</p>
+                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint1")}</p>
                         </div>
                         <div className={styles.bulletPoint}>
                             <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>Väljakutse esitamine on suurepärane viis näidata oma sotsiaalset vastutust ja pälvida tähelepanu oma ettevõtte tegevustele.</p>
+                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint2")}</p>
                         </div>
                         <div className={styles.bulletPoint}>
                             <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>Väljakutse eesmärk on innustada inimesi annetama.</p>
+                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint3")}</p>
                         </div>
                         <div className={styles.bulletPoint}>
                             <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>Charry meeskond tagab, et auhindade lunastamine on aus ja turvaline.</p>
+                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint4")}</p>
                         </div>
                     </div>
-                    <button className={styles.challengeButton} onClick={openChallengeModal}>Väljakutse näide</button>
+                    <button className={styles.challengeButton} onClick={openChallengeModal}>{t("challenges.main.buttonText")}</button>
                 </div>
                 <img src={rightSideImage} className={styles.sideImage} alt="" />
             </div>
             <div className={styles.futureContainer}>
-                <h2 className={styles.futureHeading}>Tuleviku partnerid</h2>
+                <h2 className={styles.futureHeading}>{t("challenges.future.title")}</h2>
                 <div className={styles.textButtonContainer}>
-                    <p className={styles.futureText}>Kui sinu ettevõte soovib panustada Eesti heategevuskultuuri arengusse, võta meiega ühendust.</p>
-                    <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>Võta ühendust</a>
+                    <p className={styles.futureText}>{t("challenges.future.titleText")}</p>
+                    <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>{t("challenges.future.buttonText")}</a>
                 </div>
             </div>
             <ChallengeModal isOpen={isChallengeModalOpen} onClose={closeChallengeModal} />
