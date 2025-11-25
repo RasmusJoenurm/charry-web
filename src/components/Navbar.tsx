@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import styles from "./Navbar.module.css";
 import logo from "../assets/birdCircular.svg"
@@ -9,11 +10,14 @@ const Navbar: React.FC = () => {
     const location = useLocation();
     const [isLanguageOpen, setIsLanguageOpen] = useState(false);
     const [currentLanguage, setCurrentLanguage] = useState("Est");
+    const { t, i18n } = useTranslation();
 
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
     const handleLanguageChange = (newLang: string) => {
+        const langCode = newLang === "Est" ? "et" : "en";
+        i18n.changeLanguage(langCode);
         setCurrentLanguage(newLang);
         setIsLanguageOpen(false);
     }
@@ -50,9 +54,9 @@ const Navbar: React.FC = () => {
             </div>
 
             <div className={styles.navButtons}>
-                <Link to="/partners" data-text="MTÜ-d" className={` ${styles.navButton} ${location.pathname === "/partners" || location.pathname === "/newPartners" ? styles.active : ""}`}>MTÜ-d</Link>
-                <Link to="/challenges" data-text="Väljakutsed" className={` ${styles.navButton} ${location.pathname === "/challenges" ? styles.active : ""}`}>Väljakutsed</Link>
-                <Link to="/us" data-text="Meie" className={` ${styles.navButton} ${location.pathname === "/us" ? styles.active : ""}`}>Meie</Link>
+                <Link to="/partners" data-text={t("nav.partners")} className={` ${styles.navButton} ${location.pathname === "/partners" || location.pathname === "/newPartners" ? styles.active : ""}`}>{t("nav.partners")}</Link>
+                <Link to="/challenges" data-text={t("nav.challenges")} className={` ${styles.navButton} ${location.pathname === "/challenges" ? styles.active : ""}`}>{t("nav.challenges")}</Link>
+                <Link to="/us" data-text={t("nav.us")} className={` ${styles.navButton} ${location.pathname === "/us" ? styles.active : ""}`}>{t("nav.us")}</Link>
 
                 <div className={styles.languageSelector}>
                     <button className={styles.languageButton} onClick={() =>
