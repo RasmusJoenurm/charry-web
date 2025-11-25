@@ -59,6 +59,10 @@
             "title": "Big Boss",
             "titleText1": "Charry is our mascot. A handsome little bird who guides and inspires us every day.",
             "titleText2": "And yes, if you’re wondering - he’s a white raven. Not a chick, sparrow, pigeon, or owl."
+        },
+        "social": {
+            "title": "Find our social media",
+            "titleText": "Follow Charry’s life and activities more closely on our social media."
         }
     }
 }

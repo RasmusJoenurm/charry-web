@@ -58,6 +58,10 @@
             "title": "Suur Boss",
             "titleText1": "Charry on meie maskott. Nägus linnuke, kes igapäevaselt suunab ja inspireerib meid.",
             "titleText2": "Kui te küsite, siis jah — ta on valge ronk. Mitte tibu, varblane, tuvi ega öökull."
+        },
+        "social": {
+            "title": "Leia meid sotsiaalmeediast",
+            "titleText": "Jälgi Charry elu ja tegemisi lähemalt meie sotsiaalmeedias."
         }
     }
 }

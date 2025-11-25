@@ -53,9 +53,9 @@ function Us() {
                 <img src={johanna} className={styles.rowImage} alt="" />
             </div>
             <div className={styles.findUs}>
-                <h2 className={styles.findUsHeading}>Leia meid sotsiaalmeediast</h2>
+                <h2 className={styles.findUsHeading}>{t("us.social.title")}</h2>
                 <div className={styles.textButtonsContainer}>
-                    <p className={styles.findUsText}>Jälgi Charry elu ja tegemisi lähemalt meie sotsiaalmeedias.</p>
+                    <p className={styles.findUsText}>{t("us.social.titleText")}</p>
                     <div className={styles.buttonStack}>
                         <a href="https://www.instagram.com/charry.rakendus/" className={styles.socialButton}>Instagram</a>
                         <a href="https://www.tiktok.com/@charry.app/" className={styles.socialButton}>TikTok</a>
