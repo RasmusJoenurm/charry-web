@@ -3,5 +3,17 @@
         "partners": "MTÜ-d",
         "challenges": "Väljakutsed",
         "us": "Meie"
+    },
+    "home": {
+        "yellow": {
+            "titleLine1": "Muuda Eesti paremaks,",
+            "titleLine2": "üks väike heategu korraga",
+            "subLine1": "Charry annetusäpp on eesti kaasaegseim",
+            "subLine2": "annetusplatvorm, millega saad teha head igas",
+            "subLine3": "kohas ja igal ajal"
+        },
+        "main": {
+
+        }
     }
 }

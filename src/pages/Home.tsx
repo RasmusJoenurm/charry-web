@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 
 import styles from "./Home.module.css"
 import huggingBird from "../assets/birdHugging.svg"
@@ -20,6 +21,8 @@ function Home() {
 
     const [userCount, setUserCount] = useState<number>(100);
 
+    const { t } = useTranslation()
+
     useEffect(() => {
         fetch("https://backend-impact-203432700423.europe-west1.run.app/user/currentNumberOfUsers")
             .then(response => response.json())
@@ -31,8 +34,8 @@ function Home() {
         <>
             <div className={styles.yellowContainer}>
                 <div className={styles.textWithBirds}>
-                    <h1 className={styles.yellowHeading}>Muuda Eesti paremaks,<br />üks väike heategu korraga</h1>
-                    <p className={styles.yellowSubHeading}>Charry annetusäpp on eesti kaasaegseim<br />annetusplatvorm, millega saad teha head igas<br />kohas ja igal ajal</p>
+                    <h1 className={styles.yellowHeading}>{t("home.yellow.titleLine1")}<br /> {t("home.yellow.titleLine2")}</h1>
+                    <p className={styles.yellowSubHeading}>{t("home.yellow.subLine1")}<br /> {t("home.yellow.subLine2")}<br /> {t("home.yellow.subLine3")}</p>
 
                     <img src={huggingBird} alt="hugging bird" className={styles.huggingBird} />
                     <img src={wavingBird} alt="waving bird" className={styles.wavingBird} />

@@ -3,5 +3,17 @@
         "partners": "Charities",
         "challenges": "Challenges",
         "us": "Team"
+    },
+    "home": {
+        "yellow": {
+            "titleLine1": "Make Estonia a better place,",
+            "titleLine2": "one small good deed at a time",
+            "subLine1": "Do good anytime,",
+            "subLine2": "anywhere with Estonia’s most",
+            "subLine3": "modern charity platform"
+        },
+        "main": {
+            
+        }
     }
 }
