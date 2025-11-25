@@ -22,6 +22,10 @@
             "downloadTitle": "Laadi alla Charry annetusäpp",
             "downloadText": "Saadaval iOS ja Android seadmetel.",
             "downloadButton": "Laadi alla"
+        },
+        "bottom": {
+            "usersCount": "{{count}}+ annetajat",
+            "usersText": "Koos loome suure mõju!"
         }
     }
 }

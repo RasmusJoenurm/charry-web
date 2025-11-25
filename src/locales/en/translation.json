@@ -22,7 +22,10 @@
             "downloadTitle": "Download the Charry donation app",
             "downloadText": "Available on IOS and Android devices.",
             "downloadButton": "Download"
-
+        },
+        "bottom": {
+            "usersCount": "{{count}}+ donors",
+            "usersText": "Together we make a huge impact!"
         }
     }
 }

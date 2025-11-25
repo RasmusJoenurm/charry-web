@@ -62,8 +62,8 @@ function Home() {
 
             <div className={styles.bottomContainer}>
                 <div className={styles.textContainer}>
-                    <p className={styles.line1}>{userCount}+ annetajat</p>
-                    <p className={styles.line2}>Koos loome suure mõju!</p>
+                    <p className={styles.line1}>{t("home.bottom.usersCount", { count: userCount })}</p>
+                    <p className={styles.line2}>{t("home.bottom.usersText")}</p>
                 </div>
             </div>
             <QRModal isOpen={isQRModalOpen} onClose={closeQRModal} />
