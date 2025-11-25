@@ -28,6 +28,23 @@
             "usersText": "Koos loome suure mõju!"
         }
     },
+    "newPartners": {
+        "main": {
+            "title": "Uued MTÜ-d",
+            "titleText1": "Annetajate usaldus on meie peamine prioriteet. Seetõttu veendume enne platvormile lisamist, et heategevusorganisatsioon on usaldusväärne ja tõhusalt toimiv.",
+            "titleText2": "Meie jaoks on olulised nii korras olevad dokumendid kui ka säravad silmad ja siiras soov ühiskonda aidata.",
+            "bulletpoint1": "Charry meeskond tagab, et kõik platvormiga seotud protsessid oleksid heategevusorganisatsiooni jaoks võimalikult mugavad ja sujuvalt toimivad.",
+            "bulletpoint2": "Kõik platvormil tehtud annetused suunatakse koheselt otse heategevusorganisatsioonidele.",
+            "bulletpoint3": "Charry platvormil saavad heategevusorganisatsioonid mugavalt jagada oma annetajatele (visuaalset) tagasisidet.",
+            "smallText": "* Charry meeskond on alati valmis aitama tagasiside sisu loomisel, näiteks fotode ja videote tegemisel.",
+            "bulletpoint4": "Platvormiga liitumiseks peab heategevusorganisatsioon olema kantud tulumaksusoodustusega ühingute nimekirja."
+        },
+        "join": {
+            "title": "Ole üks meie MTÜ-dest",
+            "titleText": "Järgnevate sammude arutamiseks võta meiega ühendust.",
+            "buttonText": "Võta ühendust"
+        }
+    },
     "challenges": {
         "main": {
             "title": "Ettevõtete väljakutsed",

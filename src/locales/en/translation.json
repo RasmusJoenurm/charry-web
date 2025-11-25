@@ -29,6 +29,23 @@
             "usersText": "Together we make a huge impact!"
         }
     },
+    "newPartners": {
+        "main": {
+            "title": "New Charities",
+            "titleText1": "Donor trust is our top priority. That’s why we make sure that every charity organization is reliable and operates effectively before adding it to our platform.",
+            "titleText2": "For us, both proper documentation and a genuine desire to help Estonian society are fundamentally important.",
+            "bulletpoint1": "The Charry team ensures that all processes related to the platform are as convenient and seamless as possible for charity organizations.",
+            "bulletpoint2": "All donations made through the platform are directed immediately and fully to the charity organizations.",
+            "bulletpoint3": "On the Charry platform, charity organizations can easily share (visual) feedback with their donors.",
+            "smallText": "* The Charry team is always ready to assist in creating feedback content, such as taking photos and videos.",
+            "bulletpoint4": "To join the platform, a charity organization must be registered in the list of entities eligible for income tax benefits."
+        },
+        "join": {
+            "title": "Become one of our charities",
+            "titleText": "For further instructions please contact us.",
+            "buttonText": "Contact us"
+        }
+    },
     "challenges": {
         "main": {
             "title": "Partner Challenges",
