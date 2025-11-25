@@ -44,5 +44,16 @@
             "titleText": "If your company wishes to contribute to Estonia’s charity culture and present a charitable challenge, get in touch with us.",
             "buttonText": "Contact us"
         }
+    },
+    "us": {
+        "mission": {
+            "title": "Mission",
+            "titleText": "We aim to make donating a new social norm. We work to make giving as easy and enjoyable as possible, something you want to do again and again. Together, we can make Estonia a role model in the field of charity."
+        },
+        "family": {
+            "title": "Charry family",
+            "titleText": "We are open to new team members. If you feel you can bring value to Charry, get in touch with us.",
+            "buttonText": "Contact us"
+        }
     }
 }

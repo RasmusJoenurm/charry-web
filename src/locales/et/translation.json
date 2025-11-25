@@ -43,5 +43,16 @@
             "titleText": "Kui sinu ettevõte soovib panustada Eesti heategevuskultuuri arengusse, võta meiega ühendust.",
             "buttonText": "Võta ühendust"
         }
+    },
+    "us": {
+        "mission": {
+            "title": "Missioon",
+            "titleText": "Soovime muuta annetamise uueks ühiskondlikuks normiks. Töötame selle nimel, et teha annetamine võimalikult lihtsaks ja nauditavaks, mida soovid korrata veel ja veel. Üheskoos saame muuta Eesti eeskujuks ka heategevusvaldkonnas."
+        },
+        "family": {
+            "title": "Charry pere",
+            "titleText": "Oleme avatud uuteks tutvusteks. Kui tunned, et saad Charryle väärtust lisada, võta ühendust.",
+            "buttonText": "Võta ühendust"
+        }
     }
 }

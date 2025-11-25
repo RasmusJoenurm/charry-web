@@ -30,14 +30,14 @@ function Us() {
     return (
         <>
             <div className={styles.missionContainer}>
-                <h1 className={styles.missionHeading}>Missioon</h1>
-                <p className={styles.missionText}>Soovime muuta annetamise uueks ühiskondlikuks normiks. Töötame selle nimel, et teha annetamine võimalikult lihtsaks ja nauditavaks, mida soovid korrata veel ja veel. Üheskoos saame muuta Eesti eeskujuks ka heategevusvaldkonnas.</p>
+                <h1 className={styles.missionHeading}>{t("us.mission.title")}</h1>
+                <p className={styles.missionText}>{t("us.mission.titleText")}</p>
             </div>
             <div className={styles.familyContainer}>
-                <h2 className={styles.familyHeading}>Charry pere</h2>
+                <h2 className={styles.familyHeading}>{t("us.family.title")}</h2>
                 <div className={styles.textButtonContainer}>
-                    <p className={styles.familyText}>Oleme avatud uuteks tutvusteks. Kui tunned, et saad Charryle väärtust lisada, võta ühendust.</p>
-                    <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>Võta ühendust</a>
+                    <p className={styles.familyText}>{t("us.family.titleText")}</p>
+                    <a href="mailto:robert@charry.ee?subject?Contact%20Request" className={styles.contactButton}>{t("us.family.buttonText")}</a>
                 </div>
             </div>
             <div className={styles.bossContainer}>
