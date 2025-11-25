@@ -18,7 +18,7 @@ function Challenges() {
         setIsChallengeModalOpen(false);
     }
 
-    const { t } = useTranslation()
+    const { t } = useTranslation();
 
     return (
         <>

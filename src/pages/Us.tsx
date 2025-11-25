@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 import styles from "./Us.module.css"
 
@@ -23,6 +24,8 @@ function Us() {
     const prevImage = () => {
         setCurrentImageIndex((prevIndex) => prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1);
     }
+
+    const { t } = useTranslation();
 
     return (
         <>

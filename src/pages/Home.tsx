@@ -21,7 +21,7 @@ function Home() {
 
     const [userCount, setUserCount] = useState<number>(100);
 
-    const { t } = useTranslation()
+    const { t } = useTranslation();
 
     useEffect(() => {
         fetch("https://backend-impact-203432700423.europe-west1.run.app/user/currentNumberOfUsers")
