@@ -43,7 +43,7 @@
 }
 
 .textContent {
-
+    background-color: red;
 }
 
 .cardHeading {
@@ -58,7 +58,7 @@
     flex: 1;
     font-size: 1.5rem;
     color: #F8F6EE;
-    max-width: 50ch;
+    max-width: 30ch;
     opacity: 80%;
     margin-bottom: 2rem;
 }
