@@ -34,7 +34,8 @@
             "title": "Our friends",
             "titleText": "If you want your trustworthy and well-functioning charity organization to be on the Charry platform, learn more.",
             "buttonText": "New Charities"
-        }
+        },
+        "filterLabel": "Select a filter"
     },
     "newPartners": {
         "main": {
@@ -89,7 +90,14 @@
             "titleText": "Follow Charry’s life and activities more closely on our social media."
         }
     },
-
+    "categories": {
+        "Tervis": "Health",
+        "Loomade heaolu": "Animal Wellness",
+        "Laste heaolu": "Child Wellness",
+        "Loodus ja keskkond": "Environment",
+        "Haridus": "Education",
+        "Tugev ühiskond": "Strong Society"
+    },
     "cards": {
         "cancer": {
             "name": "MTÜ Eesti Vähiliit",

@@ -33,7 +33,8 @@
             "title": "Meie sõbrad",
             "titleText": "Kui soovid, et sinu usaldusväärne ja hästi toimiv heategevusorganisatsioon oleks Charry platvormil, uuri rohkem.",
             "buttonText": "Uued MTÜ-d"
-        }
+        },
+        "filterLabel": "Vali filter"
     },
     "newPartners": {
         "main": {
@@ -88,7 +89,14 @@
             "titleText": "Jälgi Charry elu ja tegemisi lähemalt meie sotsiaalmeedias."
         }
     },
-
+    "categories": {
+        "Tervis": "Tervis",
+        "Loomade heaolu": "Loomade heaolu",
+        "Laste heaolu": "Laste heaolu",
+        "Loodus ja keskkond": "Loodus ja Keskkond",
+        "Haridus": "Haridus",
+        "Tugev ühiskond": "Tugev ühiskond"
+    },
     "cards": {
         "cancer": {
             "name": "MTÜ Eesti Vähiliit",

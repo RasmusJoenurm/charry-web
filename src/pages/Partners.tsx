@@ -43,7 +43,7 @@ function Partners() {
                 </div>
             </div>
             <div className={styles.filterSection}>
-                <p className={styles.filterHeading}>Vali filter</p>
+                <p className={styles.filterHeading}>{t("partners.filterLabel")}</p>
                 <div className={styles.filterGrid}>
                     {categories.map((category) => (
                         <div
@@ -53,7 +53,7 @@ function Partners() {
                             onClick={() => scrollToCategory(category)}
                         >
                             <span className={styles.filterText}>
-                                {category} ({getCategoryCount(category)})
+                                {t(`categories.${category}`)} ({getCategoryCount(category)})
                             </span>
                         </div>
                     ))}
