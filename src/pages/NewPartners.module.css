@@ -108,12 +108,19 @@
 
 }
 
+.birdReading {
+    position: absolute;
+    right: 11vw;
+    top: 12vw;
+    clip-path: inset(25% 20% 12% 24%);
+}
+
 .sideImage {
     flex: 0 0 auto;
     display: block;
     align-self: flex-start;
-    margin-top: 10rem;
-    margin-right: -6rem;
+    margin-top: 20rem;
+    margin-right: -6vw;
 }
 
 /* Join us section */

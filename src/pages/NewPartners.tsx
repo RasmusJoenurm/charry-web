@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import styles from "./NewPartners.module.css"
+import birdReading from "../assets/birdReading.svg"
 import bulletIcon from "../assets/heartBulletPoint.svg"
 import rightSideImage from "../assets/newPartnersMobile.svg"
 import divider from "../assets/heartDividerPink.svg"
@@ -45,6 +46,7 @@ function NewPartners() {
                         </div>
                     </div>
                 </div>
+                <img src={birdReading} className={styles.birdReading} alt="" />
                 <img src={rightSideImage} className={styles.sideImage} alt="" />
             </div>
             <div className={styles.joinContainer}>
