@@ -24,17 +24,17 @@ function Challenges() {
         <>
             <div className={styles.headingContainer}>
                 <h1 className={styles.headingTop}>{t("challenges.main.title")}</h1>
+                <div className={styles.introSection}>
+                    <p className={styles.introText}>{t("challenges.main.titleText")}</p>
+                </div>
             </div>
             <div className={styles.challengesMainContent}>
-                <div className={styles.textMainContent}>
-                    <div className={styles.introSection}>
-                        <p className={styles.introText}>{t("challenges.main.titleText")}</p>
-                    </div>
+                <div className={styles.leftContent}>
                     <div className={styles.heartDivider}>
                         <img src={divider} className={styles.heartDividerImage}></img>
                     </div>
-
-                    <div className={styles.bulletPointContainer}>
+                    <div className={styles.textMainContent}>
+                        <div className={styles.bulletPointContainer}>
                         <div className={styles.bulletPoint}>
                             <img src={bulletIcon} className={styles.bulletIcon} alt="" />
                             <p className={styles.bulletText}>{t("challenges.main.bulletpoint1")}</p>
@@ -52,7 +52,8 @@ function Challenges() {
                             <p className={styles.bulletText}>{t("challenges.main.bulletpoint4")}</p>
                         </div>
                     </div>
-                    <button className={styles.challengeButton} onClick={openChallengeModal}>{t("challenges.main.buttonText")}</button>
+                        <button className={styles.challengeButton} onClick={openChallengeModal}>{t("challenges.main.buttonText")}</button>
+                    </div>
                 </div>
                 <img src={rightSideImage} className={styles.sideImage} alt="" />
             </div>

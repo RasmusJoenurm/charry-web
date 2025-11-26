@@ -16,6 +16,11 @@ body, * {
   font-family: "Baloo", system-ui, sans-serif;
 }
 
+html, body {
+  font-family: "Baloo", system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
 /* Remove default link styles */
 a {
   text-decoration: none;  /* Removes underlines */

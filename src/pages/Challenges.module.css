@@ -39,12 +39,11 @@
     display: flex;
     padding: 0 var(--content-padding-x);
     align-items: flex-start;
-    width: 100vw;
     justify-content: space-between;
     margin-top: -2rem;
 }
 
-.textMainContent {
+.leftContent {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -54,16 +53,15 @@
 
 .introSection {
     margin-bottom: 2rem;
+    max-width: 80ch;
 }
 
 .introText {
-    flex: 1;
     color: #F8F6EE;
     font-size: 1.5rem;
 }
 
 .heartDivider {
-    display: flex;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -151,4 +149,59 @@
     color: #14162B;
     border-radius: 0.8rem;
     text-align: center;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 480px) {
+    .challengesMainContent {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .leftContent {
+        display: contents; /* Dissolve wrapper*/
+    }
+    
+    .headingTop {
+        line-height: 1;
+    }
+    
+    .introSection {
+        padding-top: 7vw;
+    }
+    
+    .heartDivider {
+        order: 1;
+    }
+    
+    .sideImage {
+        order: 2;
+        align-self: center;
+        margin-right: -18vw;
+        width: 110%;
+        height: auto;
+    }
+    .textMainContent {
+        order: 3;
+    }
+
+    .textButtonContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .futureContainer {
+        padding: 20vw var(--content-padding-x);
+    }
+    .futureHeading {
+        line-height: 1;
+    }
+    .futureText {
+        padding-top: 6vw;
+        padding-bottom: 4vw;
+        width: 80vw;
+    }
+    .contactButton {
+    }
 }
