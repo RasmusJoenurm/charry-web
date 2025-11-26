@@ -34,6 +34,8 @@
 
 .yellowContainer {
     width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
     background-color: #ffde74;
     padding: 11rem 5% 15rem 5%;
     display: flex;
