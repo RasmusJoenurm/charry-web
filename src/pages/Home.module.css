@@ -112,10 +112,9 @@
 /* Main part of the page */
 
 .mainContent {
-    padding: 4vw var(--content-padding-x);
+    padding: var(--content-padding-x) var(--content-padding-x) calc(var(--content-padding-x) * 0.5) var(--content-padding-x);
     color: #F8F6EE;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -179,6 +178,9 @@
 .imageColumn {
     flex: 0 0 auto;
     display: flex;
+    height: 100%;
+    width: auto;
+    clip-path: inset(4% 0.5% 10% 0.5%);
 }
 
 .mobilePhone {
