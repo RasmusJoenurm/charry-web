@@ -5,7 +5,7 @@ import styles from "./Challenges.module.css"
 import bulletIcon from "../assets/birdBulletPoint.svg"
 import ChallengeModal from "../components/ChallengeModal"
 import rightSideImage from "../assets/challengesMobile.svg"
-import divider from "../assets/heartDivider.svg"
+import divider from "../assets/heartDividerBlue.svg"
 
 function Challenges() {
     const [isChallengeModalOpen, setIsChallengeModalOpen] = useState(false);

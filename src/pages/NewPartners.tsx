@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import styles from "./NewPartners.module.css"
 import bulletIcon from "../assets/heartBulletPoint.svg"
 import rightSideImage from "../assets/newPartnersMobile.svg"
-import divider from "../assets/heartDivider.svg"
+import divider from "../assets/heartDividerPink.svg"
 
 function NewPartners() {
 
