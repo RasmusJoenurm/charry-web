@@ -27,7 +27,7 @@
 
 .cardContainer {
     display: flex;
-    gap: 5rem;
+    gap: 8rem;
     align-items: center;
     padding: var(--content-padding-y) var(--content-padding-x);
 }
@@ -43,7 +43,7 @@
 }
 
 .textContent {
-    
+
 }
 
 .cardHeading {
