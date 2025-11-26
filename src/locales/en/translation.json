@@ -138,6 +138,7 @@
         "rescue": {
             "name": "Päästeliit",
             "description": "We are society’s guardian angels, helping people in their darkest moments — courage is our greatest virtue!"
-        }
+        },
+        "button": "Donate"
     }
 }

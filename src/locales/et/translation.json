@@ -137,6 +137,7 @@
         "rescue": {
             "name": "Päästeliit",
             "description": "Oleme ühiskonna kaitseinglid, kes aotavad inimesi hirmsamateil hetkedel - julgus on meie suurim voorus!"
-        }
+        },
+        "button": "Toeta"
     }
 }

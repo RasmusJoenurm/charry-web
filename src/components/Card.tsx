@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useTranslation } from "react-i18next";
 
 import styles from "./Card.module.css"
 import QRModal from "./QRModal";
@@ -20,13 +21,15 @@ function Card({ name, card, description, isReversed }: CardProps) {
     const closeQRModal = () => {
         setIsQRModalOpen(false);
     }
+
+    const { t } = useTranslation()
     return (
         <div className={`${styles.cardContainer} ${isReversed ? styles.reversed : ""}`}>
             <img src={card} className={styles.cardImage} alt="" />
             <div className={styles.textContent}>
                 <h2 className={styles.cardHeading}>{name}</h2>
                 <p className={styles.cardDescription}>{description}</p>
-                <button className={styles.downloadButton} onClick={openQRModal}>Toeta</button>
+                <button className={styles.downloadButton} onClick={openQRModal}>{t("cards.button")}</button>
             </div>
             <QRModal isOpen={isQRModalOpen} onClose={closeQRModal} />
         </div>
