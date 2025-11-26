@@ -71,9 +71,9 @@ function Partners() {
                                     return (
                                         <Card
                                             key={card.id}
-                                            name={card.name}
+                                            name={t(card.name)}
                                             card={card.card}
-                                            description={card.description}
+                                            description={t(card.description)}
                                             isReversed={currentIndex % 2 !== 0}
                                         />
                                     );

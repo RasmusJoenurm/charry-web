@@ -88,5 +88,48 @@
             "title": "Find us on social media",
             "titleText": "Follow Charry’s life and activities more closely on our social media."
         }
+    },
+
+    "cards": {
+        "cancer": {
+            "name": "MTÜ Eesti Vähiliit",
+            "description": "Cancer prevention and treatment are an increasingly urgent need. We are here to keep Estonia healthy!"
+        },
+        "oncology": {
+            "name": "MTÜ Onkoloogia",
+            "description": "In difficult times, people need support – we are a network for those diagnosed with cancer!"
+        },
+        "animals": {
+            "name": "MTÜ Loomus",
+            "description": "We want a dignified life for every animal. We protect and support those living around us!"
+        },
+        "shelter": {
+            "name": "Varjupaikade MTÜ",
+            "description": "Every animal deserves a safe, clean, and loving home — we make sure of that!"
+        },
+        "sos": {
+            "name": "SOS Lasteküla",
+            "description": "Good children grow up in a caring environment! Let’s ensure that every child in Estonia has a safe childhood!"
+        },
+        "hospital": {
+            "name": "Tartu ülikooli kliinikumi lastefond",
+            "description": "Children and young people are Estonia’s future. Let’s help keep the future healthy!"
+        },
+        "green": {
+            "name": "Eesti Roheline Liikumine",
+            "description": "We stand for a clean and sustainable Estonia! Nature and the health of our homeland are close to our hearts!"
+        },
+        "antibully": {
+            "name": "SA Kiusamisvaba Kool",
+            "description": "A school should be a safe second home for every student — a place to grow and learn. We create a safe school environment!"
+        },
+        "school": {
+            "name": "SA Noored Kooli",
+            "description": "Education is the most important value that everyone has the right to! Let’s bring more young people into Estonia’s education sector!"
+        },
+        "rescue": {
+            "name": "Päästeliit",
+            "description": "We are society’s guardian angels, helping people in their darkest moments — courage is our greatest virtue!"
+        }
     }
 }

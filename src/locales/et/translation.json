@@ -87,5 +87,48 @@
             "title": "Leia meid sotsiaalmeediast",
             "titleText": "Jälgi Charry elu ja tegemisi lähemalt meie sotsiaalmeedias."
         }
+    },
+
+    "cards": {
+        "cancer": {
+            "name": "MTÜ Eesti Vähiliit",
+            "description": "Vähi ennetus ja ravi on ajas aina kasvav vajadus. Oleme siin, et hoida Eestimaa tervena!"
+        },
+        "oncology": {
+            "name": "MTÜ Onkoloogia",
+            "description": "Rasketel aegadel on inimestel vaja tuge - oleme võrgustik vähi diagnoosi saanutele!"
+        },
+        "animals": {
+            "name": "MTÜ Loomus",
+            "description": "Soovime igale loomale väärikat elu. Kaitseme ja toetame koos meie ümber elavaid!"
+        },
+        "shelter": {
+            "name": "Varjupaikade MTÜ",
+            "description": "Iga loom väärib turvalist, puhast ja armastavat kodu - meie hoolitseme selle eest!"
+        },
+        "sos": {
+            "name": "SOS Lasteküla",
+            "description": "Head lapsed kasvavad hoolivas keskkonnas! Tagame, et kõigil lastel Eestis oleks turvaline lapsepõlv!"
+        },
+        "hospital": {
+            "name": "Tartu ülikooli kliinikumi lastefond",
+            "description": "Lapsed ja noored on Eesti tulevik. Aitame hoida tuleviku tervist!"
+        },
+        "green": {
+            "name": "Eesti Roheline Liikumine",
+            "description": "Seisame puhta ja jätkusuutliku Eestimaa eest! Loodus ja kodumaa tervis on meie südameasi!"
+        },
+        "antibully": {
+            "name": "SA Kiusamisvaba Kool",
+            "description": "Kool peab olema õpilasele turvaline teine kodu, kus kasvada ja õppida. Loome koos turvalise koolikeskkonna!"
+        },
+        "school": {
+            "name": "SA Noored Kooli",
+            "description": "Haridus on oluliseim väärtus, millele on õigus igaühel! Toome Eesti haridusvaldkonda rohkem noori!"
+        },
+        "rescue": {
+            "name": "Päästeliit",
+            "description": "Oleme ühiskonna kaitseinglid, kes aotavad inimesi hirmsamateil hetkedel - julgus on meie suurim voorus!"
+        }
     }
 }
