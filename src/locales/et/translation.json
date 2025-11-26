@@ -28,6 +28,13 @@
             "usersText": "Koos loome suure mõju!"
         }
     },
+    "partners": {
+        "friends": {
+            "title": "Meie sõbrad",
+            "titleText": "Kui soovid, et sinu usaldusväärne ja hästi toimiv heategevusorganisatsioon oleks Charry platvormil, uuri rohkem.",
+            "buttonText": "Uued MTÜ-d"
+        }
+    },
     "newPartners": {
         "main": {
             "title": "Uued MTÜ-d",

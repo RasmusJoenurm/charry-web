@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"
 
 import styles from "./Partners.module.css"
 import { cards, categories } from "../data/cards"
@@ -30,13 +31,15 @@ function Partners() {
         element?.scrollIntoView({ behavior: "smooth" });
     };
 
+    const { t } = useTranslation();
+
     return (
         <>
             <div className={styles.friendsContainer}>
-                <h2 className={styles.friendsHeading}>Meie sõbrad</h2>
+                <h2 className={styles.friendsHeading}>{t("partners.friends.title")}</h2>
                 <div className={styles.textButtonContainer}>
-                    <p className={styles.friendsText}>Kui soovid, et sinu usaldusväärne ja hästi toimiv heategevusorganisatsioon oleks Charry platvormil, uuri rohkem.</p>
-                    <Link to="/newPartners" className={styles.newPartnersButton}>Uued MTÜ-d</Link>
+                    <p className={styles.friendsText}>{t("partners.friends.titleText")}</p>
+                    <Link to="/newPartners" className={styles.newPartnersButton}>{t("partners.friends.buttonText")}</Link>
                 </div>
             </div>
             <div className={styles.filterSection}>

@@ -29,6 +29,13 @@
             "usersText": "Together we make a huge impact!"
         }
     },
+    "partners": {
+        "friends": {
+            "title": "Our friends",
+            "titleText": "If you want your trustworthy and well-functioning charity organization to be on the Charry platform, learn more.",
+            "buttonText": "New Charities"
+        }
+    },
     "newPartners": {
         "main": {
             "title": "New Charities",
