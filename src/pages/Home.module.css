@@ -67,17 +67,17 @@
 
 .huggingBird {
     position: absolute;
-    left: -280px;
-    bottom: -200px;
-    width: 370px;
+    left: -20vw;
+    bottom: -15rem;
+    width: 27vw;
     height: auto;
 }
 
 .wavingBird {
     position: absolute;
-    right: -230px;
-    bottom: -170px;
-    width: 250px;
+    right: -20vw;
+    bottom: -13rem;
+    width: 20vw;
     height: auto;
 }
 
