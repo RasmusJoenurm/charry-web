@@ -52,7 +52,10 @@ const Navbar: React.FC = () => {
 
     useEffect(() => {
         const handleClickOutside = (event: TouchEvent) => {
-            if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+            const target = event.target as Element;
+            const mobileButton = target.closest(".mobileMenuButton") || target.closest("[class*=mobileMenuButton]");
+
+            if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node) && !mobileButton) {
                 setIsMobileMenuOpen(false);
             }
         };
@@ -81,9 +84,6 @@ const Navbar: React.FC = () => {
                     <Link to="/partners" data-text={t("nav.partners")} className={` ${styles.navButton} ${location.pathname === "/partners" || location.pathname === "/newPartners" ? styles.active : ""}`}>{t("nav.partners")}</Link>
                     <Link to="/challenges" data-text={t("nav.challenges")} className={` ${styles.navButton} ${location.pathname === "/challenges" ? styles.active : ""}`}>{t("nav.challenges")}</Link>
                     <Link to="/us" data-text={t("nav.us")} className={` ${styles.navButton} ${location.pathname === "/us" ? styles.active : ""}`}>{t("nav.us")}</Link>
-                    <button onClick={toggleMobileMenu}>
-                        <img src={isMobileMenuOpen ? closeMenu : hamburgerMenu} />
-                    </button>
 
                     <div className={styles.languageSelector}>
                         <button className={styles.languageButton} onClick={() =>
@@ -96,6 +96,9 @@ const Navbar: React.FC = () => {
                             </div>
                         )}
                     </div>
+                    <button className={styles.mobileMenuButton} onClick={toggleMobileMenu}>
+                        <img src={isMobileMenuOpen ? closeMenu : hamburgerMenu} />
+                    </button>
                 </div>
             </nav>
             {isMobileMenuOpen && (

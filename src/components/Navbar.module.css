@@ -120,6 +120,10 @@
     visibility: hidden;
 }
 
+.mobileMenuButton {
+    display: none;
+}
+
 /* Language selector */
 
 .languageSelector {
@@ -163,4 +167,35 @@
     color: #14162B;
     font-weight: 400;
     font-size: 110%;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 480px) {
+    .navButton {
+        display: none;
+    }
+    .mobileMenuButton {
+        display: block;
+        background-color: #ffde74;
+        border: none;
+    }
+    .mobileMenu {
+        position: fixed;
+        top: 97px;
+        width: 100%;
+        background-color: #ffde74;
+        z-index: 999;
+        padding: var(--content-padding-y) var(--content-padding-x);
+    }
+    .mobileMenuContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileNavButton {
+        font-size: 2rem;
+    }
+    .mobileNavButton.active {
+        font-weight: 800;
+    }
 }
