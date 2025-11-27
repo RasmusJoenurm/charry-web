@@ -37,6 +37,11 @@ const Navbar: React.FC = () => {
         const handleScroll = () => {
             const currentSrcrollY = window.scrollY;
 
+            if (isMobileMenuOpen) {
+                setIsVisible(true);
+                return;
+            }
+
             if (currentSrcrollY === 0) {
                 setIsVisible(true);
             } else if (currentSrcrollY > lastScrollY && currentSrcrollY > 100) {
@@ -48,7 +53,7 @@ const Navbar: React.FC = () => {
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [lastScrollY]);
+    }, [lastScrollY, isMobileMenuOpen]);
 
     useEffect(() => {
         const handleClickOutside = (event: TouchEvent) => {
