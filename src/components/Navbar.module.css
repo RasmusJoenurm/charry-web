@@ -186,6 +186,7 @@
         background-color: #ffde74;
         z-index: 999;
         padding: var(--content-padding-y) var(--content-padding-x);
+        border-bottom: 1px solid black;
     }
     .mobileMenuContent {
         display: flex;

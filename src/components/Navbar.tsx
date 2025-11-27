@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
 
     return (
         <>
-            <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden} ${location.pathname === "/" ? styles.homeBorder : ""}`}>
+            <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden} ${(location.pathname === "/" && !isMobileMenuOpen) ? styles.homeBorder : ""}`}>
                 <div className={styles.logoContainer}>
                     <Link to="/" className={styles.logoLink}>
                         <img src={logo} alt="Charry logo" className={styles.logo} />
