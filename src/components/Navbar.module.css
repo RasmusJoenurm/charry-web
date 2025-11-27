@@ -170,14 +170,28 @@
 
 /* MOBILE LAYOUT */
 
+@media (max-width: 360px) {
+    .logoContainer {
+        padding-left: 5vw;
+    }
+    .navButtons {
+        padding-right: 5vw;
+    }
+}
+
 @media (max-width: 480px) {
     .navButton {
         display: none;
+        justify-content: flex-start;
     }
     .mobileMenuButton {
         display: block;
         background-color: #ffde74;
         border: none;
+    }
+
+    .navButtons {
+        gap: 5vw; /* How far away language selector and menu button are from eachother */
     }
 
     .navbar.hidden + .mobileMenu:not(.mobileMenuOpen) {
