@@ -179,6 +179,11 @@
         background-color: #ffde74;
         border: none;
     }
+
+    .navbar.hidden + .mobileMenu:not(.mobileMenuOpen) {
+        transform: translateY(-200%);
+    }
+
     .mobileMenu {
         position: fixed;
         top: 97px;
@@ -187,7 +192,15 @@
         z-index: 999;
         padding: var(--content-padding-y) var(--content-padding-x);
         border-bottom: 1px solid black;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        pointer-events: none; /* to remove potential pointer bugs when menu is not open */
     }
+    .mobileMenuOpen {
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
     .mobileMenuContent {
         display: flex;
         flex-direction: column;

@@ -106,15 +106,13 @@ const Navbar: React.FC = () => {
                     </button>
                 </div>
             </nav>
-            {isMobileMenuOpen && (
-                <div className={styles.mobileMenu} ref={mobileMenuRef}>
-                    <div className={styles.mobileMenuContent}>
-                        <Link to="/partners" className={`${styles.mobileNavButton} ${location.pathname === "/partners" || location.pathname === "/newPartners" ? styles.active : ""}`} onClick={() => setIsMobileMenuOpen(false)}>{t("nav.partners")}</Link>
-                        <Link to="/challenges" className={`${styles.mobileNavButton} ${location.pathname === "/challenges" ? styles.active : ""}`} onClick={() => setIsMobileMenuOpen(false)}>{t("nav.challenges")}</Link>
-                        <Link to="/us" className={`${styles.mobileNavButton} ${location.pathname === "/us" ? styles.active : ""}`} onClick={() => setIsMobileMenuOpen(false)}>{t("nav.us")}</Link>
-                    </div>
+            <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ""}`} ref={mobileMenuRef}>
+                <div className={styles.mobileMenuContent}>
+                    <Link to="/partners" className={`${styles.mobileNavButton} ${location.pathname === "/partners" || location.pathname === "/newPartners" ? styles.active : ""}`} onClick={() => setIsMobileMenuOpen(false)}>{t("nav.partners")}</Link>
+                    <Link to="/challenges" className={`${styles.mobileNavButton} ${location.pathname === "/challenges" ? styles.active : ""}`} onClick={() => setIsMobileMenuOpen(false)}>{t("nav.challenges")}</Link>
+                    <Link to="/us" className={`${styles.mobileNavButton} ${location.pathname === "/us" ? styles.active : ""}`} onClick={() => setIsMobileMenuOpen(false)}>{t("nav.us")}</Link>
                 </div>
-            )}
+            </div>
         </>
     );
 };
