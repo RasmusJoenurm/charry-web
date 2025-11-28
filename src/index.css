@@ -8,6 +8,7 @@
 :root {
   --content-padding-x: 10vw;
   --content-padding-y: 3.5vw;
+  --content-padding-x-mobile: 5vw;
 
   --heading-size: 4rem;
   --subHeading-size: 3.2rem;
@@ -18,6 +19,7 @@
 /* Global font family */
 body, * {
   font-family: "Baloo", system-ui, sans-serif;
+  max-width: 100%;
 }
 
 html, body {

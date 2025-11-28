@@ -180,6 +180,9 @@
 }
 
 @media (max-width: 480px) {
+    .logoContainer {
+        padding-left: var(--content-padding-x-mobile);
+    }
     .navButton {
         display: none;
         justify-content: flex-start;
@@ -191,6 +194,7 @@
     }
 
     .navButtons {
+        padding-right: var(--content-padding-x-mobile);
         gap: 5vw; /* How far away language selector and menu button are from eachother */
     }
 
@@ -204,7 +208,7 @@
         width: 100%;
         background-color: #ffde74;
         z-index: 999;
-        padding: var(--content-padding-y) var(--content-padding-x);
+        padding: var(--content-padding-y) var(--content-padding-x-mobile);
         border-bottom: 1px solid black;
         transform: translateY(-100%);
         transition: transform 0.3s ease-in-out;
