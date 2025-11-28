@@ -8,6 +8,10 @@
 :root {
   --content-padding-x: 10vw;
   --content-padding-y: 3.5vw;
+
+  --heading-size: 4rem;
+  --subHeading-size: 3.2rem;
+
   overscroll-behavior: none;
 }
 

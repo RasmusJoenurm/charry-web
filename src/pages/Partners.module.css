@@ -31,8 +31,8 @@
 }
 
 .friendsHeading {
-    font-size: 3.2rem;
-    font-weight: 500;
+    font-size: var(--heading-size);
+    font-weight: 600;
 }
 
 .textButtonContainer {
