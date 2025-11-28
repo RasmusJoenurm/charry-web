@@ -7,6 +7,12 @@
 
 @font-face {
     font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Baloo";
     src: url("../assets/fonts/BalooTamma2-Bold.ttf")
     format("truetype");
     font-weight: 600;
@@ -37,7 +43,7 @@
 
 .logo {
     height: 68px;
-    width: 66px;
+    width: auto;
     top: 5px;
 }
 
@@ -51,7 +57,7 @@
 
 .logoTitle {
     font-size: 165%;
-    font-weight: 800;
+    font-weight: 600;
     color: #F8F6EE;
     line-height: 1;
     margin: 0;
@@ -60,7 +66,7 @@
 
 .logoSubTitle {
     font-size: 110%;
-    font-weight: 800;
+    font-weight: 500;
     color: #F8F6EE;
     line-height: 1;
     margin: 0;
@@ -75,10 +81,41 @@
     margin-left: 4rem;
     gap: 1.5rem;
     align-items: center;
+    margin-top: 1vw;
+}
+.socialLogo {
+    height: 30px;
+    width: auto;
 }
 
 @media (max-width: 480px) {
     .footer {
         padding: 3rem var(--content-padding-x-mobile);
+    }
+
+    /* Logo */
+
+
+    .logo {
+        height: 38px;
+        width: auto;
+        top: 5px;
+    }
+
+    .logoTitle {
+        font-size: 135%;
+    }
+
+    .logoSubTitle {
+        font-size: 82.5%;
+    }
+
+    /* Social media icons */
+    .social {
+
+    }
+    .socialLogo {
+        height: 30px;
+        width: auto;
     }
 }
