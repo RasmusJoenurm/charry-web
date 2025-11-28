@@ -229,6 +229,7 @@
     .storeButtons {
         display: flex;
         flex-direction: column;
+        margin-bottom: -5vw;
     }
     .storeButton {
         width: 100%;

@@ -76,3 +76,9 @@
     gap: 1.5rem;
     align-items: center;
 }
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 3rem var(--content-padding-x-mobile);
+    }
+}
