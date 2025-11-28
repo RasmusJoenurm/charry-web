@@ -11,7 +11,12 @@
   --content-padding-x-mobile: 5vw;
 
   --heading-size: 4rem;
+  --heading-size-mobile: 2.25rem;
   --subHeading-size: 3.2rem;
+
+  --text-size-mobile-big: 1.8rem;
+  --text-size-mobile-med: 1.5rem;
+  --text-size-mobile-sml: 1.3rem;
 
   overscroll-behavior: none;
 }

@@ -35,53 +35,55 @@ function Partners() {
 
     return (
         <>
-            <div className={styles.friendsContainer}>
-                <h2 className={styles.friendsHeading}>{t("partners.friends.title")}</h2>
-                <div className={styles.textButtonContainer}>
-                    <p className={styles.friendsText}>{t("partners.friends.titleText")}</p>
-                    <Link to="/newPartners" className={styles.newPartnersButton}>{t("partners.friends.buttonText")}</Link>
+            <div className={styles.mainContent}>
+                <div className={styles.friendsContainer}>
+                    <h2 className={styles.friendsHeading}>{t("partners.friends.title")}</h2>
+                    <div className={styles.textButtonContainer}>
+                        <p className={styles.friendsText}>{t("partners.friends.titleText")}</p>
+                        <Link to="/newPartners" className={styles.newPartnersButton}>{t("partners.friends.buttonText")}</Link>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.filterSection}>
-                <p className={styles.filterHeading}>{t("partners.filterLabel")}</p>
-                <div className={styles.filterGrid}>
-                    {categories.map((category) => (
-                        <div
-                            key={category}
-                            className={styles.filterButton}
-                            style={{ backgroundImage: `url(${categoryIcons[category]})` }}
-                            onClick={() => scrollToCategory(category)}
-                        >
-                            <span className={styles.filterText}>
-                                {t(`categories.${category}`)} ({getCategoryCount(category)})
-                            </span>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className={styles.cardsContainer}>
-                {(() => {
-                    let globalIndex = 0;
-                    return categories.map(category => {
-                        const categoryCards = cards.filter(card => card.category === category);
-                        return (
-                            <div key={category} id={category}>
-                                {categoryCards.map((card) => {
-                                    const currentIndex = globalIndex++;
-                                    return (
-                                        <Card
-                                            key={card.id}
-                                            name={t(card.name)}
-                                            card={card.card}
-                                            description={t(card.description)}
-                                            isReversed={currentIndex % 2 !== 0}
-                                        />
-                                    );
-                                })}
+                <div className={styles.filterSection}>
+                    <p className={styles.filterHeading}>{t("partners.filterLabel")}</p>
+                    <div className={styles.filterGrid}>
+                        {categories.map((category) => (
+                            <div
+                                key={category}
+                                className={styles.filterButton}
+                                style={{ backgroundImage: `url(${categoryIcons[category]})` }}
+                                onClick={() => scrollToCategory(category)}
+                            >
+                                <span className={styles.filterText}>
+                                    {t(`categories.${category}`)} ({getCategoryCount(category)})
+                                </span>
                             </div>
-                        );
-                    });
-                })()}
+                        ))}
+                    </div>
+                </div>
+                <div className={styles.cardsContainer}>
+                    {(() => {
+                        let globalIndex = 0;
+                        return categories.map(category => {
+                            const categoryCards = cards.filter(card => card.category === category);
+                            return (
+                                <div key={category} id={category}>
+                                    {categoryCards.map((card) => {
+                                        const currentIndex = globalIndex++;
+                                        return (
+                                            <Card
+                                                key={card.id}
+                                                name={t(card.name)}
+                                                card={card.card}
+                                                description={t(card.description)}
+                                                isReversed={currentIndex % 2 !== 0}
+                                            />
+                                        );
+                                    })}
+                                </div>
+                            );
+                        });
+                    })()}
+                </div>
             </div>
         </>
     )
