@@ -194,7 +194,7 @@
 
 @media (max-width: 480px) {
     .yellowContainer {
-        padding: var(--content-padding-y) var(--content-padding-x-mobile);
+        padding: var(--content-padding-x-mobile) var(--content-padding-x-mobile);
     }
     .textWithBirds {
         position: relative;
@@ -235,6 +235,33 @@
         width: 100%;
         height: auto;
     }
+
+    /* Main section */
+    .mainContent {
+        padding: var(--content-padding-x) var(--content-padding-x-mobile) var(--content-padding-y) var(--content-padding-x-mobile);
+        flex-direction: column;
+    }
+    .textHeading {
+        font-size: 1.8rem
+    }
+    .upperText {
+        font-size: 1.2rem;
+    }
+    .smallerText {
+        font-size: 1.2rem;
+    }
+    .buttonContainer {
+        display: none;
+    }
+
+    /* Bottom section */
+    .line1 {
+        font-size: 1.8rem;
+    }
+    .line2 {
+        font-size: 1.2rem;
+    }
+
 }
 
 @media (min-width: 400px) and (max-width: 480px) {
@@ -244,4 +271,21 @@
     .yellowSubHeading {
         font-size: 1.8rem;
     }
+    .textHeading {
+        font-size: 2.4rem
+    }
+    .upperText {
+        font-size: 1.8rem;
+    }
+    .smallerText {
+        font-size: 1.8rem;
+    }
+
+        /* Bottom section */
+        .line1 {
+            font-size: 2.4rem;
+        }
+        .line2 {
+            font-size: 1.8rem;
+        }
 }
