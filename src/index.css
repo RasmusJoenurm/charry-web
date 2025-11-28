@@ -20,6 +20,7 @@
 body, * {
   font-family: "Baloo", system-ui, sans-serif;
   max-width: 100%;
+  text-wrap: balance;
 }
 
 html, body {
