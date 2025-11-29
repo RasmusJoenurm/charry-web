@@ -41,6 +41,7 @@ function Us() {
                 </div>
             </div>
             <div className={styles.bossContainer}>
+                <h3 className={styles.bossHeadingMobile}>{t("us.boss.title")}</h3>
                 <img src={bossImage} className={styles.bossImage} alt="" />
                 <div className={styles.textContainer}>
                     <h3 className={styles.bossHeading}>{t("us.boss.title")}</h3>

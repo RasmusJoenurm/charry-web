@@ -101,6 +101,10 @@
     color: #F8F6EE;
 }
 
+.bossHeadingMobile {
+    display: none;
+}
+
 .bossText {
     font-size: 1.5rem;
     opacity: 80%;
@@ -207,6 +211,7 @@
     /* Mission section */
     .missionContainer {
         width: 100%;
+        padding: var(--content-padding-y) var(--content-padding-x-mobile);
     }
 
     .missionHeading {
@@ -219,6 +224,7 @@
 
     /* Family section */
     .familyContainer {
+        padding: var(--content-padding-x) var(--content-padding-x-mobile) 4vw;
     }
     
     .familyHeading {
@@ -236,9 +242,54 @@
         margin-bottom: 4vw;
     }
 
+    /* Boss section */
+    .bossContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--content-padding-y) var(--content-padding-x-mobile);
+    }
+
+    .bossHeading {
+        display: none;
+    }
+
+    .bossImage {
+        /* padding-left: var(--content-padding-x);
+        padding-right: var(--content-padding-x); */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .bossHeadingMobile {
+        display: block;
+        font-weight: 400;
+        color: #F8F6EE;
+        font-size: var(--subHeading-size-mobile);
+        margin-top: 5vw;
+        margin-bottom: -15vw;
+    }
+
+    .bossText {
+        margin-top: -4vw;
+    }
+
+    /* Team section */
+    .teamContainer {
+        padding: var(--content-padding-y) var(--content-padding-x);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rowImage {
+        width: 100%;
+        max-width: none;
+    }
+
     /* Find us section */ 
     .findUs {
         flex-direction: column;
+        padding: var(--content-padding-x) var(--content-padding-x-mobile);
     }
 
     .findUsHeading {
@@ -280,5 +331,4 @@
         right: 3vw;
         transform: scale(75%);
     }
-
 }
