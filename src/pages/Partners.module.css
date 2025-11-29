@@ -133,4 +133,21 @@
         margin-bottom: 5vw;
     }
 
+    /* Filter section */
+    .filterHeading {
+        font-size: 1.5rem;
+    }
+    .filterGrid {
+        gap: 1vw 1.5vw;
+    }
+    .filterText {
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        
+    }
+    .filterButton {
+        background-size: 100% auto;
+        min-height: 15vw;
+        width: auto;
+    }
 }

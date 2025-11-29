@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next"
+import { useState, useEffect } from "react";
 
 import styles from "./Partners.module.css"
 import { cards, categories } from "../data/cards"
@@ -12,15 +13,38 @@ import loodusSvg from "../assets/filterNature.svg"
 import haridusSvg from "../assets/filterEducation.svg"
 import uhiskondSvg from "../assets/filterSociety.svg"
 
+import tervisSvgMobile from "../assets/filterHealthMobile.svg"
+import loomadSvgMobile from "../assets/filterAnimalsMobile.svg"
+import lasteSvgMobile from "../assets/filterChildrenMobile.svg"
+import loodusSvgMobile from "../assets/filterNatureMobile.svg"
+import haridusSvgMobile from "../assets/filterEducationMobile.svg"
+import uhiskondSvgMobile from "../assets/filterSocietyMobile.svg"
+
+const useIsMobile = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        setIsMobile(window.innerWidth <= 480);
+        const handleResize = () => setIsMobile(window.innerWidth <= 480);
+        window.addEventListener("resize", handleResize);
+
+        return () =>
+            window.removeEventListener("resize", handleResize);
+    }, []);
+    return isMobile;
+}
+
 function Partners() {
 
+    const isMobile = useIsMobile();
+
     const categoryIcons: Record<string, string> = {
-        "Tervis": tervisSvg,
-        "Loomade heaolu": loomadSvg,
-        "Laste heaolu": lasteSvg,
-        "Loodus ja keskkond": loodusSvg,
-        "Haridus": haridusSvg,
-        "Tugev ühiskond": uhiskondSvg
+        "Tervis": isMobile ? tervisSvgMobile : tervisSvg,
+        "Loomade heaolu": isMobile ? loomadSvgMobile : loomadSvg,
+        "Laste heaolu": isMobile ? lasteSvgMobile : lasteSvg,
+        "Loodus ja keskkond": isMobile ? loodusSvgMobile : loodusSvg,
+        "Haridus": isMobile ? haridusSvgMobile : haridusSvg,
+        "Tugev ühiskond": isMobile ? uhiskondSvgMobile : uhiskondSvg
     };
 
     const getCategoryCount = (category: string) =>
