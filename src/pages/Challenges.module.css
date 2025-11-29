@@ -25,6 +25,7 @@
     font-weight: 800;
 }
 
+/* Heading section */
 .headingContainer {
     padding: var(--content-padding-y) var(--content-padding-x);
     color: #F8F6EE;
@@ -35,7 +36,19 @@
     font-weight: 600;
 }
 
-.challengesMainContent {
+.introSection {
+    margin-bottom: 2rem;
+    max-width: 80ch;
+    opacity: 80%;
+}
+
+.introText {
+    color: #F8F6EE;
+    font-size: 1.5rem;
+}
+
+/* Main section */
+.mainContent {
     display: flex;
     padding: 0 var(--content-padding-x);
     align-items: flex-start;
@@ -49,17 +62,6 @@
     flex-direction: column;
     max-width: 60ch;
     opacity: 80%;
-}
-
-.introSection {
-    margin-bottom: 2rem;
-    max-width: 80ch;
-    opacity: 80%;
-}
-
-.introText {
-    color: #F8F6EE;
-    font-size: 1.5rem;
 }
 
 .heartDivider {
@@ -118,7 +120,6 @@
 }
 
 /* Future section */
-
 .futureContainer {
     padding: 5vw var(--content-padding-x);
     color: #F8F6EE;
@@ -155,9 +156,23 @@
 /* MOBILE LAYOUT */
 
 @media (max-width: 480px) {
-    .challengesMainContent {
+    /* Heading section */
+    .headingContainer {
+        padding: var(--content-padding-y) var(--content-padding-x-mobile);
+    }
+    
+    .headingTop {
+        font-size: var(--heading-size-mobile);
+    }
+    .introText {
+        font-size: var(--text-size-mobile-sml);
+    }
+
+    /* Main section */
+    .mainContent {
         flex-direction: column;
         width: 100%;
+        padding: var(--content-padding-y) var(--content-padding-x-mobile);
     }
     
     .leftContent {
@@ -174,6 +189,11 @@
     
     .heartDivider {
         order: 1;
+    }
+
+    .bulletText {
+        opacity: 80%;
+        font-size: var(--text-size-mobile-sml);
     }
     
     .sideImage {
@@ -192,8 +212,9 @@
         align-items: flex-start;
     }
 
+    /* Future section */
     .futureContainer {
-        padding: 20vw var(--content-padding-x);
+        padding: 20vw var(--content-padding-x-mobile);
     }
     .futureHeading {
         line-height: 1;
@@ -202,7 +223,5 @@
         padding-top: 6vw;
         padding-bottom: 4vw;
         width: 80vw;
-    }
-    .contactButton {
     }
 }

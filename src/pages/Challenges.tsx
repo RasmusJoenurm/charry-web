@@ -28,30 +28,30 @@ function Challenges() {
                     <p className={styles.introText}>{t("challenges.main.titleText")}</p>
                 </div>
             </div>
-            <div className={styles.challengesMainContent}>
+            <div className={styles.mainContent}>
                 <div className={styles.leftContent}>
                     <div className={styles.heartDivider}>
                         <img src={divider} className={styles.heartDividerImage}></img>
                     </div>
                     <div className={styles.textMainContent}>
                         <div className={styles.bulletPointContainer}>
-                        <div className={styles.bulletPoint}>
-                            <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint1")}</p>
+                            <div className={styles.bulletPoint}>
+                                <img src={bulletIcon} className={styles.bulletIcon} alt="" />
+                                <p className={styles.bulletText}>{t("challenges.main.bulletpoint1")}</p>
+                            </div>
+                            <div className={styles.bulletPoint}>
+                                <img src={bulletIcon} className={styles.bulletIcon} alt="" />
+                                <p className={styles.bulletText}>{t("challenges.main.bulletpoint2")}</p>
+                            </div>
+                            <div className={styles.bulletPoint}>
+                                <img src={bulletIcon} className={styles.bulletIcon} alt="" />
+                                <p className={styles.bulletText}>{t("challenges.main.bulletpoint3")}</p>
+                            </div>
+                            <div className={styles.bulletPoint}>
+                                <img src={bulletIcon} className={styles.bulletIcon} alt="" />
+                                <p className={styles.bulletText}>{t("challenges.main.bulletpoint4")}</p>
+                            </div>
                         </div>
-                        <div className={styles.bulletPoint}>
-                            <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint2")}</p>
-                        </div>
-                        <div className={styles.bulletPoint}>
-                            <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint3")}</p>
-                        </div>
-                        <div className={styles.bulletPoint}>
-                            <img src={bulletIcon} className={styles.bulletIcon} alt="" />
-                            <p className={styles.bulletText}>{t("challenges.main.bulletpoint4")}</p>
-                        </div>
-                    </div>
                         <button className={styles.challengeButton} onClick={openChallengeModal}>{t("challenges.main.buttonText")}</button>
                     </div>
                 </div>
