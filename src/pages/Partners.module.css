@@ -29,6 +29,7 @@
     padding: var(--content-padding-y) var(--content-padding-x);
 }
 
+/* Friends section */
 .friendsContainer {
     color: #F8F6EE;
 }
@@ -62,7 +63,6 @@
 }
 
 /* Filter section */
-
 .filterSection {
     padding: 4rem 0 6rem;
 }
@@ -92,7 +92,6 @@
     width: auto;
     min-height: 7vw;
     padding: 0%;
-
 }
 
 .filterButton:hover {
@@ -121,13 +120,16 @@
         padding: var(--content-padding-y) var(--content-padding-x-mobile);
         margin-bottom: -25vw;
     }
+
     .textButtonContainer {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .friendsHeading {
         font-size: var(--heading-size-mobile)
     }
+
     .friendsText {
         font-size: var(--text-size-mobile-sml);
         width: auto;
@@ -138,14 +140,17 @@
     .filterHeading {
         font-size: 1.5rem;
     }
+
     .filterGrid {
         gap: 1vw 1.5vw;
     }
+
     .filterText {
         font-size: 0.8rem;
         margin-left: 1rem;
         
     }
+
     .filterButton {
         background-size: 100% auto;
         min-height: 15vw;

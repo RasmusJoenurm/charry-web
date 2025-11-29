@@ -83,18 +83,22 @@
         gap: 8vw;
         padding: var(--content-padding-y) var(--content-padding-x-mobile);
     }
+
     .cardHeading {
         font-size: var(--heading-size-mobile);
         margin-bottom: 4vw;
     }
+
     .cardDescription {
         font-size: var(--text-size-mobile-sml);
         margin-bottom: 4vw;
         max-width: 60ch;
     }
+
     .downloadButton {
         margin-bottom: 8vw;
     }
+    
     .cardImage {
         width: 70%;
         height: auto;
