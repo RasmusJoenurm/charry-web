@@ -15,7 +15,7 @@ function NewPartners() {
             <div className={styles.headingContainer}>
                 <h1 className={styles.headingTop}>{t("newPartners.main.title")}</h1>
             </div>
-            <div className={styles.challengesMainContent}>
+            <div className={styles.mainContent}>
                 <div className={styles.textMainContent}>
                     <div className={styles.introSection}>
                         <p className={styles.introText}>{t("newPartners.main.titleText1")}<br /> <br /> {t("newPartners.main.titleText2")}</p>
@@ -23,6 +23,7 @@ function NewPartners() {
                     <div className={styles.heartDivider}>
                         <img src={divider} className={styles.heartDividerImage}></img>
                     </div>
+                    <img src={rightSideImage} className={styles.sideImageMobile} alt="" />
 
                     <div className={styles.bulletPointContainer}>
                         <div className={styles.bulletPoint}>

@@ -17,6 +17,7 @@
   --text-size-mobile-big: 1.8rem;
   --text-size-mobile-med: 1.5rem;
   --text-size-mobile-sml: 1.3rem;
+  --text-size-mobile-xsml: 1.2rem;
 
   overscroll-behavior: none;
 }
