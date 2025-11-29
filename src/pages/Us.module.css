@@ -87,7 +87,6 @@
 
 .bossImage {
     display: flex 0 0 auto;
-
 }
 
 .textContainer {
@@ -201,4 +200,85 @@
     height: auto;
     object-fit: cover;
     object-position: center;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width:480px) {
+    /* Mission section */
+    .missionContainer {
+        width: 100%;
+    }
+
+    .missionHeading {
+        font-size: var(--heading-size-mobile);
+    }
+    
+    .missionText {
+        font-size: var(--text-size-mobile-sml);
+    }
+
+    /* Family section */
+    .familyContainer {
+    }
+    
+    .familyHeading {
+        font-size: var(--heading-size-mobile);
+    }
+
+    .textButtonContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .familyText {
+        font-size: var(--text-size-mobile-sml);
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+
+    /* Find us section */ 
+    .findUs {
+        flex-direction: column;
+    }
+
+    .findUsHeading {
+        font-size: var(--heading-size-mobile);
+        line-height: 1;
+        margin-bottom: 4vw;
+    }
+
+    .textButtonsContainer {
+        flex-direction: column;
+    }
+
+    .findUsText {
+        font-size: var(--text-size-mobile-sml);
+        margin-bottom: 4vw;
+    }
+
+    .buttonStack {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .socialButton {
+        flex: 1;
+    }
+
+    /* Gallery section */
+    .arrowButton {
+        size: 80%;
+    }
+
+    .leftArrow {
+        left: 3vw;
+        transform: scale(75%);
+    }
+    
+    .rightArrow {
+        right: 3vw;
+        transform: scale(75%);
+    }
+
 }
