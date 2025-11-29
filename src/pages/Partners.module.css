@@ -119,6 +119,7 @@
 @media (max-width: 480px) {
     .mainContent {
         padding: var(--content-padding-y) var(--content-padding-x-mobile);
+        margin-bottom: -25vw;
     }
     .textButtonContainer {
         flex-direction: column;
