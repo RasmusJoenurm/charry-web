@@ -163,6 +163,8 @@
     
     .headingTop {
         font-size: var(--heading-size-mobile);
+        line-height: 1;
+        margin-top: 2vw;
     }
     .introText {
         font-size: var(--text-size-mobile-sml);
@@ -177,10 +179,6 @@
     
     .leftContent {
         display: contents; /* Dissolve wrapper*/
-    }
-    
-    .headingTop {
-        line-height: 1;
     }
     
     .introSection {
