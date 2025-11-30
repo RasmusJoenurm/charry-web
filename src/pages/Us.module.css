@@ -26,9 +26,14 @@
 }
 
 .missionContainer {
-    padding: var(--content-padding-y) var(--content-padding-x);
-    width: 70vw;
+    padding: var(--content-padding-y) var(--content-padding-x) calc(var(--content-padding-y) * 0.5) var(--content-padding-x);
     color: #F8F6EE;
+}
+
+.missionContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .missionHeading {
@@ -39,12 +44,19 @@
 .missionText {
     font-size: 1.5rem;
     opacity: 80%;
+    width: 60vw;
+}
+
+.missionImage {
+    flex: 0 0 auto;
+    margin-top: -5vw;
+    background-color: red;
 }
 
 /* Family section */
 
 .familyContainer {
-    padding: var(--content-padding-x) var(--content-padding-x) 4vw;
+    padding: var(--content-padding-y) var(--content-padding-x);
     color: #F8F6EE;
 }
 
@@ -220,6 +232,11 @@
     
     .missionText {
         font-size: var(--text-size-mobile-sml);
+        width: auto;
+    }
+
+    .missionImage {
+        display: none;
     }
 
     /* Family section */

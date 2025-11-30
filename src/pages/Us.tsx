@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next"
 
 import styles from "./Us.module.css"
 
+import happyImage from "../assets/charryHappy.svg"
 import bossImage from "../assets/bossCharry.svg"
 import robert from "../assets/robert.svg"
 import aleksandr from "../assets/aleksandr.svg"
@@ -31,7 +32,10 @@ function Us() {
         <>
             <div className={styles.missionContainer}>
                 <h1 className={styles.missionHeading}>{t("us.mission.title")}</h1>
-                <p className={styles.missionText}>{t("us.mission.titleText")}</p>
+                <div className={styles.missionContent}>
+                    <p className={styles.missionText}>{t("us.mission.titleText")}</p>
+                    <img src={happyImage} className={styles.missionImage} alt="" />
+                </div>
             </div>
             <div className={styles.familyContainer}>
                 <h2 className={styles.familyHeading}>{t("us.family.title")}</h2>
