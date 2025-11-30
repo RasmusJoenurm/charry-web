@@ -101,6 +101,13 @@
         "Haridus": "Haridus",
         "Tugev ühiskond": "Tugev ühiskond"
     },
+    "team": {
+        "titles": {
+            "founder": "Algataja, ärisuund ja kommunikatsioon",
+            "developer": "Tehniline arendaja",
+            "social": "Sotsiaalmeedia sisulooja ja turundaja"
+        }
+    },
     "cards": {
         "cancer": {
             "name": "MTÜ Eesti Vähiliit",

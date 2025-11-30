@@ -102,6 +102,13 @@
         "Haridus": "Education",
         "Tugev ühiskond": "Strong Society"
     },
+    "team": {
+        "titles": {
+            "founder": "Founder, business side and communications",
+            "developer": "Developer",
+            "social": "Social media manager"
+        }
+    },
     "cards": {
         "cancer": {
             "name": "MTÜ Eesti Vähiliit",

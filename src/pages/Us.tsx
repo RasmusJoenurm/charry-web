@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
+import TeamMember from "../components/TeamMember"
+import { teamMembers } from "../data/team"
+
 import styles from "./Us.module.css"
 
 import happyImage from "../assets/charryHappy.svg"
 import bossImage from "../assets/bossCharry.svg"
-import robert from "../assets/robert.svg"
-import aleksandr from "../assets/aleksandr.svg"
-import johanna from "../assets/johanna.svg"
 
 import leftArrow from "../assets/arrowLeft.svg"
 import rightArrow from "../assets/arrowRight.svg"
@@ -53,9 +53,9 @@ function Us() {
                 </div>
             </div>
             <div className={styles.teamContainer}>
-                <img src={robert} className={styles.rowImage} alt="" />
-                <img src={aleksandr} className={styles.rowImage} alt="" />
-                <img src={johanna} className={styles.rowImage} alt="" />
+                {teamMembers.map(member => (
+                    <TeamMember key={member.id} photo={member.photo} name={member.name} title={t(member.title)} email={member.email} />
+                ))}
             </div>
             <div className={styles.findUs}>
                 <h2 className={styles.findUsHeading}>{t("us.social.title")}</h2>

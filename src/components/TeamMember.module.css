@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-SemiBold.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-Bold.ttf")
+    format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("../assets/fonts/BalooTamma2-ExtraBold.ttf")
+    format("truetype");
+    font-weight: 800;
+}
+
+.teamMember {
+    position: relative;
+    flex: 1;
+    max-width: 29vw;
+    height: auto;
+}
+
+.memberPhoto {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.memberInfo {
+    display: flex;
+    position: absolute;
+    bottom: -2vw; /* Slightly overflows bottom edge */
+    left: 2vw;
+    right: 2vw;
+    background: #FFF5FC; /* White/cream background */
+    border-radius: 1.6rem;
+    padding: 1.5vw 0.5vw;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    flex-direction: column;
+    max-height: 180px;
+}
+
+.memberName {
+    font-weight: 400;
+    color: #14162B;
+    font-size: 2.4vw;
+}
+
+.memberTitle {
+    color: #666;
+    font-size: 1.3vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+.memberEmail {
+    color: #14162B;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
