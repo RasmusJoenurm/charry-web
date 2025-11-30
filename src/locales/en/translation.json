@@ -90,6 +90,10 @@
             "titleText": "Follow Charry’s life and activities more closely on our social media."
         }
     },
+    "footer": {
+        "privacy": "Privacy policy",
+        "terms": "Terms of service"
+    },
     "categories": {
         "Tervis": "Health",
         "Loomade heaolu": "Animal Wellness",

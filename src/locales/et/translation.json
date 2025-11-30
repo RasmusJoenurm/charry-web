@@ -89,6 +89,10 @@
             "titleText": "Jälgi Charry elu ja tegemisi lähemalt meie sotsiaalmeedias."
         }
     },
+    "footer": {
+        "privacy": "Privaatsuspoliitika",
+        "terms": "Kasutamistingimused"
+    },
     "categories": {
         "Tervis": "Tervis",
         "Loomade heaolu": "Loomade heaolu",
