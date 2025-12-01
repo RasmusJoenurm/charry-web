@@ -10,8 +10,9 @@ Charry is a donation platform that makes it easy to support Estonian charities. 
 
 - **Home page** - Introduction to Charry with a download button for the mobile app
 - **Partners page** - Browse Estonian charities by category (health, education, animals, etc.)
+- **NewPartners page** - Read more about how we choose the charities associated with us, and how you can become the next.  (Navigatable through the Partners page).
 - **Challenges page** - Info about corporate partnership programs
-- **About Us page** - Meet our team and see photos
+- **About Us page** - Meet our team and see photos.
 
 ## Getting started (for beginners)
 
@@ -87,6 +88,10 @@ src/
 ### Adding new partners
 
 Edit `src/data/cards.ts` - just add a new object to the array with the partner's info. The categories are: "Tervis", "Loomade heaolu", "Laste heaolu", "Loodus ja keskkond", "Haridus", "Tugev ühiskond".
+
+### Adding new team members
+
+Edit `src/data/team.ts` - just add a new object to the array with the member's info.
 
 ### Adding gallery photos
 
