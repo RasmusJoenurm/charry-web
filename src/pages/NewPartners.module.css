@@ -210,7 +210,7 @@
 
     /* Join us section */
     .joinContainer {
-        padding: var(--content-padding-y) var(--content-padding-x-mobile);
+        padding: var(--content-padding-x) var(--content-padding-x-mobile);
     }
 
     .joinHeading {
