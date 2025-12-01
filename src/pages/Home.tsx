@@ -29,7 +29,7 @@ function Home() {
     const { t, i18n } = useTranslation();
 
     useEffect(() => {
-        fetch("https://backend-impact-203432700423.europe-west1.run.app/user/currentNumberOfUsers")
+        fetch("https://backend-203432700423.europe-west1.run.app/user/currentNumberOfUsers")
             .then(response => response.json())
             .then(data => setUserCount(data))
             .catch(() => setUserCount(100));
