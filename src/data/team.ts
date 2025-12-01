@@ -1,6 +1,7 @@
 import robert from "../assets/robert.svg"
 import aleksandr from "../assets/aleksandr.svg"
 import johanna from "../assets/johanna.svg"
+import kaisa from "../assets/kaisa.svg"
 
 export interface TeamMember {
     id: number;
@@ -32,4 +33,11 @@ export const teamMembers: TeamMember[] = [
         title: "team.titles.social",
         email: "johanna@charry.ee"
     },
+    {
+        id: 4,
+        photo: kaisa,
+        name: "Kaisa Uik",
+        title: "team.titles.designer",
+        email: "kaisauik.eu"
+    }
 ]

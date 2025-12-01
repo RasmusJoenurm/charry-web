@@ -126,8 +126,9 @@
 
 .teamContainer {
     padding: var(--content-padding-y) 4vw;
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:  5rem 2rem;
     justify-content: space-between;
 }
 
@@ -293,6 +294,7 @@
     /* Team section */
     .teamContainer {
         padding: var(--content-padding-y) var(--content-padding-x);
+        display: flex;
         flex-direction: column;
         align-items: center;
     }

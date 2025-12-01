@@ -71,3 +71,35 @@
     font-size: 1.3vw;
     font-weight: 600;
 }
+
+@media (max-width: 480px) {
+    .teamMember {
+        width: 80vw;
+        max-width: 80vw;
+    }
+
+    .memberPhoto {
+        width: 100%;
+        height: auto;
+    }
+
+    .memberInfo {
+        border-radius: 1rem;
+        bottom: -5vw;
+        left: 3vw;
+        right: 3vw;
+    }
+
+    /* Also adjust font sizes for mobile */
+    .memberName {
+        font-size: 1.2rem;
+    }
+
+    .memberTitle {
+        font-size: 0.9rem;
+    }
+
+    .memberEmail {
+        font-size: 0.9rem;
+    }
+}
