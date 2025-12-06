@@ -119,6 +119,8 @@
 .sideImage {
     flex: 0 0 auto;
     display: block;
+    width: 45%;
+    max-width: 490px;
     align-self: flex-start;
     margin-top: 20rem;
     margin-right: -6vw;
@@ -162,6 +164,8 @@
     text-align: center;
 }
 
+/* MOBILE LAYOUT */
+
 @media (max-width: 480px) {
     .headingContainer {
         padding: var(--content-padding-y) var(--content-padding-x-mobile);
@@ -196,7 +200,7 @@
     .sideImageMobile {
         display: block;
         width: 90%;
-        margin-left: 15vw;
+        margin-left: 13vw;
     }
 
     .bulletPoint {
