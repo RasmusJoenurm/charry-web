@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 import styles from "./Challenges.module.css"
 import bulletIcon from "../assets/birdBulletPoint.svg"
 import ChallengeModal from "../components/ChallengeModal"
-import rightSideImage from "../assets/challengesMobile.svg"
+import rightSideImage from "../assets/challengesMobile.png"
 import divider from "../assets/heartDividerBlue.svg"
 
 function Challenges() {

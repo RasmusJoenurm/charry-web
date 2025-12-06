@@ -113,9 +113,10 @@
 .sideImage {
     flex: 0 0 auto;
     display: block;
-    clip-path: inset(6.5% 8% 10% 7%);
+    clip-path: inset(6.5% 4% 10% 7%);
+    width: 45%;
     align-self: flex-start;
-    margin-top: -3.2rem;
+    margin-top: -8rem;
     margin-right: -6rem;
 }
 
@@ -198,8 +199,9 @@
     .sideImage {
         order: 2;
         align-self: center;
-        margin-right: -18vw;
-        width: 110%;
+        margin-top: -10vw;
+        margin-right: -10vw;
+        width: 100%;
         height: auto;
     }
     .textMainContent {
