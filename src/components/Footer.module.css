@@ -140,6 +140,7 @@
         display: flex;
         align-items: center;
         gap: 5vw;
+        margin-left: 0;
     }
     .socialLogo {
         height: 30px;

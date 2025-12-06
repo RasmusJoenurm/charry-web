@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next"
 
 import styles from "./Footer.module.css"
 import logo from "../assets/charryLogo.png"
-import insta from "../assets/insta_icon.svg"
-import tiktok from "../assets/tiktok_icon.svg"
-import facebook from "../assets/facebook_icon.svg"
-import linkedin from "../assets/linkedin_icon.svg"
+import insta from "../assets/iconInstagram.png"
+import tiktok from "../assets/iconTiktok.png"
+import facebook from "../assets/iconFacebook.png"
+import linkedin from "../assets/iconLinkedin.png"
 
 const Footer: React.FC = () => {
     const { t, i18n } = useTranslation();
