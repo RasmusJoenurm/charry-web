@@ -2,7 +2,7 @@ import React from "react"
 import { useTranslation } from "react-i18next"
 
 import styles from "./Footer.module.css"
-import logo from "../assets/birdCircular.svg"
+import logo from "../assets/charryLogo.png"
 import insta from "../assets/insta_icon.svg"
 import tiktok from "../assets/tiktok_icon.svg"
 import facebook from "../assets/facebook_icon.svg"

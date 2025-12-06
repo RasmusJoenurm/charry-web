@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import styles from "./Navbar.module.css";
-import logo from "../assets/birdCircular.svg"
+import logo from "../assets/charryLogo.png"
 import arrowIcon from "../assets/arrowIcon.svg"
 import hamburgerMenu from "../assets/hamburgerMenu.svg"
 import closeMenu from "../assets/closeMenu.svg"
