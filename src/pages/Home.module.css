@@ -155,7 +155,11 @@
     height: 100%;
     width: auto;
     clip-path: inset(4% 0.5% 10% 0.5%);
-    margin-top: -3vw;
+    margin-top: 1vw;
+}
+
+.mobilePhone {
+    width: 45%;
 }
 
 /* Bottom section */
@@ -247,6 +251,9 @@
     }
     .buttonContainer {
         display: none;
+    }
+    .mobilePhone {
+        width: 100%;
     }
 
     /* Bottom section */

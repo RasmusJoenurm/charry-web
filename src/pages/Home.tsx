@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 import styles from "./Home.module.css"
 import huggingBird from "../assets/birdHugging.svg"
 import wavingBird from "../assets/birdWaving.svg"
-import mobilePhones from "../assets/mobilePhones.svg"
+import mobilePhones from "../assets/mobilePhones.png"
 
 import appStoreEst from "../assets/appStoreEst.svg"
 import appStoreEng from "../assets/appStoreEng.svg"
