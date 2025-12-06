@@ -70,6 +70,7 @@
     padding-bottom: 0.5rem;
     padding-left: 2.3rem;
     padding-right: 2.3rem;
+    color: #14162B;
     background-color: #ffde74;
     border-radius: 0.8rem;
     cursor: pointer;
@@ -98,7 +99,7 @@
     .downloadButton {
         margin-bottom: 8vw;
     }
-    
+
     .cardImage {
         width: 70%;
         height: auto;
