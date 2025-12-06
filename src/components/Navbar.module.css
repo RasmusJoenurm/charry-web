@@ -152,6 +152,7 @@
 .arrow {
     position: relative;
     top: -0.1em;
+    width: 45%;
 }
 
 .dropdown {

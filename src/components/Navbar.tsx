@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import styles from "./Navbar.module.css";
 import logo from "../assets/charryLogo.png"
-import arrowIcon from "../assets/arrowIcon.svg"
+import arrowIcon from "../assets/arrowIcon.png"
 import hamburgerMenu from "../assets/hamburgerMenu.svg"
 import closeMenu from "../assets/closeMenu.svg"
 
