@@ -103,11 +103,13 @@
     },
     "team": {
         "titles": {
+            "charry": "Lahkuse ja empaatia juht 🐣",
             "founder": "Algataja, ärisuund ja kommunikatsioon",
             "developer": "Tehniline arendaja",
             "social": "Sotsiaalmeedia sisulooja ja turundaja",
             "designer": "Disainer ja illustraator"
-        }
+        },
+        "charryEmail": "alati.hõivatud@charry.ee"
     },
     "cards": {
         "cancer": {

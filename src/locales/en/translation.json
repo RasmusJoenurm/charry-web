@@ -104,11 +104,13 @@
     },
     "team": {
         "titles": {
+            "charry": "Head of kindness and empathy 🐣",
             "founder": "Founder, business side and communications",
             "developer": "Developer",
             "social": "Social media manager",
             "designer": "Designer and illustrator"
-        }
+        },
+        "charryEmail": "always.busy@charry.ee"
     },
     "cards": {
         "cancer": {

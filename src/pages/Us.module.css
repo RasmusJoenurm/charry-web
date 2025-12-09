@@ -97,7 +97,7 @@
 }
 
 .bossImage {
-    display: flex 0 0 auto;
+    display: inline-block;
 }
 
 .textContainer {
@@ -273,9 +273,12 @@
     .bossImage {
         /* padding-left: var(--content-padding-x);
         padding-right: var(--content-padding-x); */
-        width: 100%;
+        width: fit-content;
+        flex: 0 0 auto;
         height: auto;
         object-fit: contain;
+        display: inline-block;
+        align-self: center;
     }
 
     .bossHeadingMobile {

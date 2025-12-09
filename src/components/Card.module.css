@@ -98,6 +98,7 @@
 
     .downloadButton {
         margin-bottom: 8vw;
+        border: none; /* On native mobile, default white border */
     }
 
     .cardImage {

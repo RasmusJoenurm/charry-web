@@ -107,6 +107,7 @@
     color: #14162B;
     background-color: #7dd3fc;
     border-radius: 0.8rem;
+    border: none;
     cursor: pointer;
     align-self: flex-start;
 }

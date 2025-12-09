@@ -1,13 +1,14 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
+import CharryMember from "../components/CharryMember"
 import TeamMember from "../components/TeamMember"
 import { teamMembers } from "../data/team"
 
 import styles from "./Us.module.css"
 
 import happyImage from "../assets/charryHappy.svg"
-import bossImage from "../assets/bossCharry.svg"
+import bossImage from "../assets/bossCharry.png"
 
 import leftArrow from "../assets/arrowLeft.svg"
 import rightArrow from "../assets/arrowRight.svg"
@@ -46,7 +47,9 @@ function Us() {
             </div>
             <div className={styles.bossContainer}>
                 <h3 className={styles.bossHeadingMobile}>{t("us.boss.title")}</h3>
-                <img src={bossImage} className={styles.bossImage} alt="" />
+                <div className={styles.bossImage}>
+                    <CharryMember photo={bossImage} name="Charry" title={t("team.titles.charry")} email={t("team.charryEmail")} />
+                </div>
                 <div className={styles.textContainer}>
                     <h3 className={styles.bossHeading}>{t("us.boss.title")}</h3>
                     <p className={styles.bossText}>{t("us.boss.titleText1")}<br /> <br />{t("us.boss.titleText2")}</p>
