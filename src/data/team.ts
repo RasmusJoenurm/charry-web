@@ -1,7 +1,7 @@
-import robert from "../assets/robert.svg"
-import aleksandr from "../assets/aleksandr.svg"
-import johanna from "../assets/johanna.svg"
-import kaisa from "../assets/kaisa.svg"
+import robert from "../assets/robert.jpg"
+import aleksandr from "../assets/aleksandr.jpg"
+import johanna from "../assets/johanna.jpg"
+import kaisa from "../assets/kaisa.jpg"
 
 export interface TeamMember {
     id: number;
